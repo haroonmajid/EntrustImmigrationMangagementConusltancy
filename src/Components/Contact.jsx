@@ -146,6 +146,7 @@ const Contact = () => {
           <input
             type="date"
             name="dob"
+            placeholder='Date of Birth'
             value={formData.dob}
             onChange={handleChange}
             required
