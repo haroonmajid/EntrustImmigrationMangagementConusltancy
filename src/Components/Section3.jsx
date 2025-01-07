@@ -36,7 +36,7 @@ export default function Section3() {
 
   return (
     <section className="py-10 text-center max-w-screen-2xl px-11 mx-auto">
-       <span className="text-[56px] py-11 text-[#002F97] font-bold leading-none">
+       <span className="text-[56px] py-11 text-[#002F97] font-bold leading-none sm:text-[24px]">
                     <span className="text-[#14A660]">OUR GLOBAL</span> IMMIGRATION SERVICES
                 </span>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11 py-11 px-[60px] mx-auto">

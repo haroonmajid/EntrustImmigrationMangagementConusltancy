@@ -38,7 +38,7 @@ const Contact = () => {
   };
   return (
     <div class="py-[90px]">
-      <div class="text-[64px] sm:text-[46px] text-center text-[#14A660] font-bold">Lorem, ipsum,<br />Lorem, ipsum.</div>
+      <div class="text-[64px] sm:text-[46px] text-center text-[#14A660] font-bold">YOUR JOURNEY,<br/>OUR COMMITEMENT?</div>
       <div>
       <form
       onSubmit={handleSubmit}
@@ -148,7 +148,7 @@ const Contact = () => {
       </button>  
     </form>
     </div>
-    <div className='max-w-7xl text-center mx-auto text-[24px] py-[50px]'>
+    <div className='max-w-7xl sm:text-justify text-center mx-auto text-[24px] py-[50px]'>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, eum? Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro tempore et itaque dolore ipsa id praesentium ut? Corporis quidem fugiat libero adipisci modi consectetur sit, dolore, ut at voluptatibus explicabo minima commodi nesciunt, harum et quo mollitia tempore! Nulla reiciendis veritatis ab? Alias, eaque! Quod dolorem et distinctio!
       </div>
     </div>
