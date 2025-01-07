@@ -11,7 +11,7 @@ export default function Hero() {
         <img src="./pic-2.PNG" alt="" className="w-full hidden md:block md:w-1/2 object-cover" />
         <div className="text-center md:text-left py-10">
           <span className="text-[64px] text-[#002F97] font-bold leading-none">
-            <span className="text-[#14A660]">SKILLED</span> <br /> IMMIGRATION
+            <span className="text-[#14A660] sm:text-[46px]">SKILLED</span> <br /> IMMIGRATION
           </span>
           <p className="text-[20px] py-11 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe

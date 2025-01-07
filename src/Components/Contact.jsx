@@ -38,7 +38,7 @@ const Contact = () => {
   };
   return (
     <div class="py-[90px]">
-      <div class="text-[64px] text-center text-[#14A660] font-bold">Your Journey,<br /> Our Commitement</div>
+      <div class="text-[64px] sm:text-[46px] text-center text-[#14A660] font-bold">Lorem, ipsum,<br />Lorem, ipsum.</div>
       <div>
       <form
       onSubmit={handleSubmit}
