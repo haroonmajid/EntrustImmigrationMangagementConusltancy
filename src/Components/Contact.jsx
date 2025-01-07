@@ -8,7 +8,7 @@ const Contact = () => {
     email: '',
     migrateCountry: '',
     nationality: '',
-    age: '',
+    dob: '',
     ageRange: '',
     education: '',
     immigrationType: '',
@@ -39,7 +39,7 @@ const Contact = () => {
         email: '',
         migrateCountry: '',
         nationality: '',
-        age: '',
+        dob: '',
         ageRange: '',
         education: '',
         immigrationType: '',
@@ -115,25 +115,11 @@ const Contact = () => {
             <option value="India">India</option>
             <option value="Pakistan">Pakistan</option>
             <option value="USA">USA</option>
-            <option value="Aruba">Aruba</option>
-            <option value="Afghanistan">Afghanistan</option>
-            <option value="Angola">Angola</option>
-            <option value="Anguilla">Anguilla</option>
-            <option value="Åland Islands">Åland Islands</option>
-            <option value="Albania">Albania</option>
-            <option value="Andorra">Andorra</option>
-            <option value="United Arab Emirates">United Arab Emirates</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Armenia">Armenia</option>
-            <option value="American Samoa">American Samoa</option>
-            <option value="Zambia">Zambia</option>
-            <option value="Zimbabwe">Zimbabwe</option>
           </select>
           <input
-            type="number"
-            name="age"
-            placeholder="Age"
-            value={formData.age}
+            type="date"
+            name="dob"
+            value={formData.dob}
             onChange={handleChange}
             required
             className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
