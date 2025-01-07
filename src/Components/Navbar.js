@@ -36,14 +36,14 @@ export default function Navbar() {
                     <Link to="/" className="hover:text-[#14A660] cursor-pointer">
                         Home
                     </Link>
+                    <Link to="/VisaTypes" className="hover:text-[#14A660] cursor-pointer">
+                        Visa Types
+                    </Link>
                     <Link to="/About" className="hover:text-[#14A660] cursor-pointer">
-                        About
+                        About Us
                     </Link>
-                    <Link to="/Services" className="hover:text-[#14A660] cursor-pointer">
-                        Services
-                    </Link>
-                    <Link to="/Blog" className="hover:text-[#14A660] cursor-pointer">
-                        Our Blogs
+                    <Link to="/Testimonials" className="hover:text-[#14A660] cursor-pointer">
+                        Testimonials
                     </Link>
                     <Link to="/ContactUs" className="hover:text-[#14A660] cursor-pointer">
                         Contact Us
