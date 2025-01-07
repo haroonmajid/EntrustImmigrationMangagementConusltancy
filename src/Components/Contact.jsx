@@ -7,6 +7,8 @@ const Contact = () => {
     phone: '+971',
     email: '',
     migrateCountry: '',
+    nationality: '',
+    age: '',
     ageRange: '',
     education: '',
     immigrationType: '',
@@ -17,8 +19,10 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -31,9 +35,11 @@ const Contact = () => {
       setSuccess(true);
       setFormData({
         name: '',
-        email: '',
         phone: '+971',
+        email: '',
         migrateCountry: '',
+        nationality: '',
+        age: '',
         ageRange: '',
         education: '',
         immigrationType: '',
@@ -98,6 +104,44 @@ const Contact = () => {
             <option value="Australia">Australia</option>
           </select>
           <select
+            name="nationality"
+            value={formData.nationality}
+            onChange={handleChange}
+            required
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+          >
+            <option value="">Nationality</option>
+            <option value="UAE">UAE</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="Åland Islands">Åland Islands</option>
+            <option value="Albania">Albania</option>
+            <option value="Andorra">Andorra</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Zambia">Zambia</option>
+            <option value="Zimbabwe">Zimbabwe</option>
+          </select>
+          <input
+            type="number"
+            name="age"
+            placeholder="Age"
+            value={formData.age}
+            onChange={handleChange}
+            required
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+          />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <select
             name="ageRange"
             value={formData.ageRange}
             onChange={handleChange}
@@ -118,10 +162,8 @@ const Contact = () => {
             <option value="">Education</option>
             <option value="High School">High School</option>
             <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
           </select>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <select
             name="immigrationType"
             value={formData.immigrationType}
@@ -133,6 +175,9 @@ const Contact = () => {
             <option value="Work">Work</option>
             <option value="Study">Study</option>
           </select>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           <select
             name="preferredLocation"
             value={formData.preferredLocation}
