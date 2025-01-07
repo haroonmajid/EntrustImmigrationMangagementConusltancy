@@ -143,20 +143,21 @@ const Contact = () => {
             </option>
           ))}
           </select>
-          <input
-            type="date"
-            name="dob"
-            placeholder='Date of Birth'
-            value={formData.dob}
-            onChange={handleChange}
-            required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
-          />
-           {!formData.dob && (
+          <div className="relative">
+            <input
+              type="date"
+              name="dob"
+              value={formData.dob}
+              onChange={handleChange}
+              required
+              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            />
+            {!formData.dob && (
               <span className="absolute left-3 top-2 text-gray-400">
                 DD/MM/YYYY
               </span>
             )}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
