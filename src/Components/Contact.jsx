@@ -80,7 +80,7 @@ const Contact = () => {
     <div className="py-20">
       <div className="text-[#14A660] font-bold text-center mb-10">
         <h1 className="text-[40px] md:text-[64px] leading-snug">
-          Enquiry Form
+          ENQUIRY FORM
         </h1>
       </div>
       <form
