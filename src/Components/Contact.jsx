@@ -153,7 +153,7 @@ const Contact = () => {
               className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
             />
             {!formData.dob && (
-              <span className="absolute left-3 top-2 text-gray-400">
+              <span className="md:hidden absolute left-3 top-2 text-gray-400">
                 DD/MM/YYYY
               </span>
             )}
