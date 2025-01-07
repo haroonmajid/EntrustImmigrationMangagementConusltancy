@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="py-10 sm:py-8">
       {/* Title Section */}
-      <div className="text-[48px] sm:text-[24px] text-[#002F97] text-center font-bold mb-10 sm:mb-6">
+      <div className="text-[48px] text-[#002F97] text-center font-bold mb-10 sm:mb-6">
         Entrust Consultancy
       </div>
 
@@ -16,10 +16,10 @@ export default function Hero() {
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] sm:text-[28px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
             <span className="text-[#14A660]">SKILLED</span> <br /> IMMIGRATION
           </span>
-          <p className="text-[18px] sm:text-[14px] py-6 sm:py-4 text-justify">
+          <p className="text-[18px] py-6 sm:py-4 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
             iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
             consectetur velit! Error, earum. Voluptas veritatis ratione
@@ -42,10 +42,10 @@ export default function Hero() {
       {/* Section 2 */}
       <div className="flex flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] sm:text-[28px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
             <span className="text-[#14A660]">WORK PERMIT</span> <br /> IMMIGRATION
           </span>
-          <p className="text-[18px] sm:text-[14px] py-6 sm:py-4 text-justify">
+          <p className="text-[18px] py-6 sm:py-4 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
             iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
             consectetur velit! Error, earum. Voluptas veritatis ratione
@@ -78,10 +78,10 @@ export default function Hero() {
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] sm:text-[28px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
             <span className="text-[#14A660]">TOURIST</span> <br /> VISA
           </span>
-          <p className="text-[18px] sm:text-[14px] py-6 sm:py-4 text-justify">
+          <p className="text-[18px] py-6 sm:py-4 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
             iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
             consectetur velit! Error, earum. Voluptas veritatis ratione
