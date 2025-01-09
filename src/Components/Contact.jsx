@@ -5,6 +5,28 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "00b0b9bb-4105-4cea-8e5c-a4ee790d5051");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
   const countries = [
     'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',
     'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium',
@@ -86,6 +108,9 @@ const Contact = () => {
       setError(err.message || 'Failed to submit the form.');
     }
   };
+  const placeholderStyle = {
+    color: 'rgba(0, 0, 0, 0.5)', // Low opacity for placeholder text
+  };
 
   return (
     <div className="pb-[20px] pt-[30px]">
@@ -95,7 +120,7 @@ const Contact = () => {
         </h1>
       </div>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={onSubmit}
         className="max-w-5xl mx-auto px-6 py-5 bg-white shadow-lg rounded-md"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -134,9 +159,9 @@ const Contact = () => {
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
           >
-            <option value="" disabled selected> Migrate Country</option>
+            <option value=""selected> Migrate Country</option>
             <option value="Canada">Canada</option>
             <option value="Australia">Australia</option>
           </select>
