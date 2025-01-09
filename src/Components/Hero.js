@@ -11,6 +11,11 @@ export default function Hero() {
     const toggleReadMore1 = () => {
       setIsExpanded1(!isExpanded1);
     };
+    const [isExpanded2, setIsExpanded2] = useState(false);
+  
+    const toggleReadMore2 = () => {
+      setIsExpanded2(!isExpanded2);
+    };
   return (
     <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
@@ -88,7 +93,7 @@ export default function Hero() {
         </h1>
         <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
-          {isExpanded
+          {isExpanded2
             ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
           tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
           aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
@@ -100,10 +105,10 @@ export default function Hero() {
             : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
           tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
           <button
-            onClick={toggleReadMore}
+            onClick={toggleReadMore2}
             className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
           >
-            {isExpanded ? 'Show Less' : 'Show More'}
+            {isExpanded2 ? 'Show Less' : 'Show More'}
           </button>
         </div>
         
