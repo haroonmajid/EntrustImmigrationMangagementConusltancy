@@ -29,6 +29,7 @@ export default function Navbar() {
                 {/* Navbar Links */}
                 <nav
                     onMouseLeave={() => setIsOpen(false)}
+                    onMouseOut={()=> setIsOpen(false)}
                     className={`${isOpen ? "flex" : "hidden"
                         } md:flex flex-col md:flex-row items-center text-white text-2xl font-semibold gap-5 w-full md:w-auto`}
                 >
