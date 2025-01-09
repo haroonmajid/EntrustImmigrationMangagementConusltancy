@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { databases } from '../appwrite';
+import { Button } from 'react-bootstrap';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 const Contact = () => {
   const countries = [
@@ -27,10 +30,12 @@ const Contact = () => {
     'United Kingdom', 'United States of America', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Venezuela',
     'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'
   ];
-  
+
+  const [phone, setPhone] = useState('');
+
   const [formData, setFormData] = useState({
     name: '',
-    phone: '+971',
+    phone: '',
     email: '',
     migrateCountry: '',
     nationality: '',
@@ -48,10 +53,15 @@ const Contact = () => {
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      const dataToSubmit = { ...formData, phone };
       await databases.createDocument(
         '67776f9600374cf28ae9', // Replace with your database ID
         '67776fdb00316ea91681', // Replace with your collection ID
@@ -61,7 +71,7 @@ const Contact = () => {
       setSuccess(true);
       setFormData({
         name: '',
-        phone: '+971',
+        phone: '',
         email: '',
         migrateCountry: '',
         nationality: '',
@@ -71,21 +81,22 @@ const Contact = () => {
         immigrationType: '',
         preferredLocation: '',
       });
+      setPhone('');
     } catch (err) {
       setError(err.message || 'Failed to submit the form.');
     }
   };
 
   return (
-    <div className="py-20">
-      <div className="text-[#14A660] font-bold text-center mb-10">
-        <h1 className="text-[40px] md:text-[64px] leading-snug">
-          ENQUIRY FORM
+    <div className="pb-[20px] pt-[30px]">
+      <div className="text-[#01319f] font-bold text-center">
+        <h1 className="text-[46px] md:text-[64px] leading-snug">
+          <span className='text-[#14A660]'> LOREM IPSUM DOLOR </span>  <br /> SIT AMET.
         </h1>
       </div>
       <form
         onSubmit={handleSubmit}
-        className="max-w-5xl mx-auto px-6 py-10 bg-white shadow-lg rounded-md"
+        className="max-w-5xl mx-auto px-6 py-5 bg-white shadow-lg rounded-md"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <input
@@ -95,16 +106,16 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           />
-          <input
+          <PhoneInput
             type="text"
             name="phone"
-            placeholder="+971"
-            value={formData.phone}
-            onChange={handleChange}
+            country={'ae'} // Default country (UAE)
+            value={phone}
+            onChange={setPhone}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           />
           <input
             type="email"
@@ -113,7 +124,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
           />
         </div>
 
@@ -123,9 +134,9 @@ const Contact = () => {
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
           >
-            <option value="">Migrate Country</option>
+            <option value="" disabled selected> Migrate Country</option>
             <option value="Canada">Canada</option>
             <option value="Australia">Australia</option>
           </select>
@@ -134,14 +145,14 @@ const Contact = () => {
             value={formData.nationality}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
           >
-           <option value="">Select Nationality</option>
-          {countries.map((country, index) => (
-            <option key={index} value={country}>
-              {country}
-            </option>
-          ))}
+            <option value="">Select Nationality</option>
+            {countries.map((country, index) => (
+              <option key={index} value={country}>
+                {country}
+              </option>
+            ))}
           </select>
           <div className="relative">
             <input
@@ -150,7 +161,7 @@ const Contact = () => {
               value={formData.dob}
               onChange={handleChange}
               required
-              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
             />
             {!formData.dob && (
               <span className="md:hidden absolute left-3 top-2 text-gray-400">
@@ -166,7 +177,7 @@ const Contact = () => {
             value={formData.ageRange}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Age Range</option>
             <option value="18-25">18-25</option>
@@ -177,7 +188,7 @@ const Contact = () => {
             value={formData.education}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Education</option>
             <option value="High School">High School</option>
@@ -189,7 +200,7 @@ const Contact = () => {
             value={formData.immigrationType}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Immigration Type</option>
             <option value="Work">Work</option>
@@ -203,7 +214,7 @@ const Contact = () => {
             value={formData.preferredLocation}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#002F97]"
+            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Preferred Location</option>
             <option value="City A">City A</option>
@@ -215,20 +226,24 @@ const Contact = () => {
           <input type="checkbox" name="captcha" required />
           <label>I’m not a robot</label>
         </div>
+        <div className='text-center'>
 
-        <button
-          type="submit"
-          className="w-full md:w-1/4 py-2 px-4 bg-[#002F97] text-white font-bold rounded-md hover:bg-[#001d6b] focus:outline-none focus:ring-2 focus:ring-[#002F97]"
-        >
-          SUBMIT
-        </button>
+          <Button type="submit"
+            variant="primary"
+            className="w-[50%] md:w-1/4 py-2 px-4 bg-[#01319f] text-white font-bold rounded-md hover:bg-[#14A660] focus:outline-none focus:ring-2 focus:ring-[#01319f]">Submit
+          </Button>
+        </div>
       </form>
-
       <div className="max-w-5xl mx-auto px-6 text-center text-[16px] md:text-[20px] leading-relaxed mt-10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eum?
-        Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro
-        tempore et itaque dolore ipsa id praesentium ut? Corporis quidem fugiat
-        libero adipisci modi consectetur.
+        {isExpanded
+          ? `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eum? Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro tempore et itaque dolore ipsa id praesentium ut? Corporis quidem fugiat libero adipisci modi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque quis officia itaque similique architecto sunt rerum consequatur!`
+          : `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eum? Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro...`}
+        <button
+          onClick={toggleReadMore}
+          className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
+        >
+          {isExpanded ? 'Show Less' : 'Show More'}
+        </button>
       </div>
     </div>
   );

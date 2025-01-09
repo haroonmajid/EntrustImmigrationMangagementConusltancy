@@ -8,19 +8,18 @@ export default function Navbar() {
       };
 
     return (
-        <header className="text-gray-400 bg-[#002F97] body-font">
+        <header className="text-gray-400 bg-[#01319F] body-font">
             <div className="container mx-auto flex flex-wrap p-5 items-center justify-center md:justify-between">
                 {/* Logo and Hamburger Icon */}
                 <div className="flex items-center justify-between w-full md:w-auto">
                     {/* Logo */}
-                    <Link to='/' className="flex title-font font-medium items-center text-white">
-                        <i className="fa-solid fa-globe text-5xl text-[#14A660]"></i>
-                        <span className="ml-3 text-xl text-white">Entrust</span>
+                    <Link to='/' className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
+                    <img className="w-[60%] h-[60%]" src="./entrust-logo1.png" alt="" />
                     </Link>
 
                     {/* Hamburger Icon */}
                     <button
-                        className="md:hidden text-white text-3xl"
+                        className="md:hidden hover:text-[#14A660] text-white text-3xl"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         <i className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
@@ -29,9 +28,9 @@ export default function Navbar() {
 
                 {/* Navbar Links */}
                 <nav
-                    // onMouseLeave={() => setIsOpen(false)}
+                    onMouseLeave={() => setIsOpen(false)}
                     className={`${isOpen ? "flex" : "hidden"
-                        } md:flex flex-col md:flex-row items-center text-white text-xl gap-5 w-full md:w-auto`}
+                        } md:flex flex-col md:flex-row items-center text-white text-2xl font-semibold gap-5 w-full md:w-auto`}
                 >
                     <Link to="/" className="hover:text-[#14A660] cursor-pointer">
                         Home
@@ -48,6 +47,17 @@ export default function Navbar() {
                     <Link to="/ContactUs" className="hover:text-[#14A660] cursor-pointer">
                         Contact Us
                     </Link>
+                    {isOpen && (
+                    <div
+                        className="justify-center md:hidden">
+                        <button
+                            onClick={handleCallNow}
+                            className="gap-5 border-[1px] text-white border-[solid] border-white py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]">
+                            Call Now
+                            <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
+                        </button>
+                    </div>
+                )}
                 </nav>
                 {/* Desktop "Call Now" Button */}
                 <button
@@ -58,17 +68,7 @@ export default function Navbar() {
                 </button>
 
                 {/* Mobile "Call Now" Button */}
-                {isOpen && (
-                    <div
-                        className="justify-center mt-4 mb-6 md:hidden">
-                        <button
-                            onClick={handleCallNow}
-                            className="gap-5 border-[1px] text-white border-[solid] border-white py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]">
-                            Call Now
-                            <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
-                        </button>
-                    </div>
-                )}
+                
             </div>
         </header>
     );

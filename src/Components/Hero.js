@@ -1,22 +1,124 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Hero() {
+   const [isExpanded, setIsExpanded] = useState(false);
+  
+    const toggleReadMore = () => {
+      setIsExpanded(!isExpanded);
+    };
   return (
-    <div className="py-10 sm:py-8">
+    <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
-      <div className="text-[48px] text-[#002F97] text-center font-bold mb-10 sm:mb-6">
-        Entrust Consultancy
+      <h1 className="text-[56px] md:text-[64px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
+      <span className="text-[#14A660]"> Entrust</span>  Consultancy
+      </h1>
+      {/* SKILLED IMMIGRATION */}
+      <div className="text-center md:hidden max-w-screen-2xl mx-auto px-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+          <span className="text-[#14A660]">SKILLED</span> <br/> IMMIGRATION
+        </h1>
+        <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
+        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
+          {isExpanded
+            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
+          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
+          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
+          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
+          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
+          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
+          deleniti distinctio cum voluptas!`
+            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+          <button
+            onClick={toggleReadMore}
+            className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
+          >
+            {isExpanded ? 'Show Less' : 'Show More'}
+          </button>
+        </div>
+        
+        <button
+            type="submit"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
+          >
+            Learn More
+          </button>
+      </div>
+      <div className="text-center md:hidden max-w-screen-2xl mx-auto py-12 px-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+          <span className="text-[#14A660]">WORK PERMIT</span> <br/> IMMIGRATION
+        </h1>
+        <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
+        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
+          {isExpanded
+            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
+          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
+          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
+          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
+          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
+          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
+          deleniti distinctio cum voluptas!`
+            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+          <button
+            onClick={toggleReadMore}
+            className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
+          >
+            {isExpanded ? 'Show Less' : 'Show More'}
+          </button>
+        </div>
+        
+        <button
+            type="submit"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
+          >
+            Learn More
+          </button>
+      </div>
+      <div className="text-center md:hidden max-w-screen-2xl mx-auto px-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+          <span className="text-[#14A660]">TOURIST</span> <br/> VISA
+        </h1>
+        <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
+        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
+          {isExpanded
+            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
+          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
+          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
+          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
+          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
+          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
+          deleniti distinctio cum voluptas!`
+            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
+          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+          <button
+            onClick={toggleReadMore}
+            className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
+          >
+            {isExpanded ? 'Show Less' : 'Show More'}
+          </button>
+        </div>
+        
+        <button
+            type="submit"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
+          >
+            Learn More
+          </button>
       </div>
 
       {/* Section 1 */}
-      <div className="flex flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex flex-col hidden md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <img
           src="./pic-2.PNG"
           alt=""
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">SKILLED</span> <br /> IMMIGRATION
           </span>
           <p className="text-[18px] py-6 sm:py-4 text-justify">
@@ -32,17 +134,18 @@ export default function Hero() {
           </p>
           <button
             type="submit"
-            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#002F97] rounded-md hover:bg-[#002F97] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002F97] text-[18px] border-[1px] border-solid border-[#14A660]"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
           >
             Learn More
           </button>
+          
         </div>
       </div>
 
       {/* Section 2 */}
-      <div className="flex flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">WORK PERMIT</span> <br /> IMMIGRATION
           </span>
           <p className="text-[18px] py-6 sm:py-4 text-justify">
@@ -58,7 +161,7 @@ export default function Hero() {
           </p>
           <button
             type="submit"
-            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#002F97] rounded-md hover:bg-[#002F97] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002F97] text-[18px] border-[1px] border-solid border-[#14A660]"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
           >
             Learn More
           </button>
@@ -71,14 +174,14 @@ export default function Hero() {
       </div>
 
       {/* Section 3 */}
-      <div className="flex flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <img
           src="./pic-2.PNG"
           alt=""
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#002F97] font-bold leading-tight">
+          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">TOURIST</span> <br /> VISA
           </span>
           <p className="text-[18px] py-6 sm:py-4 text-justify">
@@ -94,7 +197,7 @@ export default function Hero() {
           </p>
           <button
             type="submit"
-            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#002F97] rounded-md hover:bg-[#002F97] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#002F97] text-[18px] border-[1px] border-solid border-[#14A660]"
+            className="w-full md:w-1/3 py-3 px-6 mb-5 font-semibold text-[#01319f] rounded-md hover:bg-[#01319f] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#01319f] text-[18px] border-[1px] border-solid border-[#14A660]"
           >
             Learn More
           </button>
