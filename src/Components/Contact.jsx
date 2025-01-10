@@ -26,6 +26,19 @@ const Contact = () => {
     if (res.success) {
       console.log("Success", res);
     }
+    setFormData({
+      name: '',
+      phone: '',
+      email: '',
+      migrateCountry: '',
+      nationality: '',
+      dob: '',
+      ageRange: '',
+      education: '',
+      immigrationType: '',
+      preferredLocation: '',
+    });
+    setPhone('');
   };
   const countries = [
     'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',

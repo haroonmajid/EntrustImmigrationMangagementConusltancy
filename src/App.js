@@ -7,6 +7,7 @@ import ContactUs from './Pages/ContactUs';
 import Blog from './Pages/Testimonials'
 import VisaTypes from './Pages/VisaTypes';
 import Testimonials from './Pages/Testimonials';
+import './App.css';
 
 
 function App() {
