@@ -4,9 +4,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import ContactUs from './Pages/ContactUs';
-import Testimonials from './Pages/Testimonials';
 import './App.css';
 import Visas from './Pages/Visas';
+import Testimonial from './Pages/Testimonial';
 
 function App() {
   console.log(process.env.REACT_APP_APPWRITE_URL);
@@ -18,7 +18,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/Visas' element={<Visas/>}/>
     <Route path='/About' element={<About/>}/>
-    <Route path='/Testimonials' element={<Testimonials/>}/>
+    <Route path='/Testimonial' element={<Testimonial/>}/>
     <Route path='/ContactUs' element={<ContactUs/>}/>
    </Routes>
    <Footer></Footer>

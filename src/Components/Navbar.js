@@ -41,7 +41,7 @@ export default function Navbar() {
                     <Link to="/About" className="hover:text-[#14A660] cursor-pointer">
                         About Us
                     </Link>
-                    <Link to="/HappyClients" className="hover:text-[#14A660] cursor-pointer">
+                    <Link to="/Testimonial.js" className="hover:text-[#14A660] cursor-pointer">
                         Happy Clients
                     </Link>
                     <Link to="/ContactUs" className="hover:text-[#14A660] cursor-pointer">
