@@ -4,11 +4,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import ContactUs from './Pages/ContactUs';
-import Blog from './Pages/Testimonials'
-import VisaTypes from './Pages/VisaTypes';
 import Testimonials from './Pages/Testimonials';
 import './App.css';
-
+import Visas from './Pages/Visas';
 
 function App() {
   console.log(process.env.REACT_APP_APPWRITE_URL);
@@ -18,11 +16,10 @@ function App() {
    <Navbar></Navbar>
    <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/VisaTypes' element={<VisaTypes/>}/>
+    <Route path='/Visas' element={<Visas/>}/>
     <Route path='/About' element={<About/>}/>
     <Route path='/Testimonials' element={<Testimonials/>}/>
     <Route path='/ContactUs' element={<ContactUs/>}/>
-
    </Routes>
    <Footer></Footer>
    </BrowserRouter>

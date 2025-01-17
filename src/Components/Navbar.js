@@ -8,7 +8,7 @@ export default function Navbar() {
       };
 
     return (
-        <header className="text-gray-400 bg-[#01319F] body-font">
+        <header className="text-gray-400 sticky top-0 z-10 bg-[#01319F] body-font">
             <div className="container mx-auto flex flex-wrap p-5 items-center justify-center md:justify-between">
                 {/* Logo and Hamburger Icon */}
                 <div className="flex items-center justify-between w-full md:w-auto">
@@ -31,22 +31,25 @@ export default function Navbar() {
                     onMouseLeave={() => setIsOpen(false)}
                     onMouseOut={()=> setIsOpen(false)}
                     className={`${isOpen ? "flex" : "hidden"
-                        } md:flex flex-col md:flex-row items-center text-white text-2xl font-semibold gap-5 w-full md:w-auto`}
+                        } md:flex flex-col md:flex-row items-center text-white text-xl font-semibold gap-5 w-full md:w-auto`}
                 >
                     <Link to="/" className="hover:text-[#14A660] cursor-pointer">
                         Home
                     </Link>
-                    <Link to="/VisaTypes" className="hover:text-[#14A660] cursor-pointer">
-                        Visa Types
+                    <Link to="/Visas" className="hover:text-[#14A660] cursor-pointer">
+                        Visas
                     </Link>
                     <Link to="/About" className="hover:text-[#14A660] cursor-pointer">
                         About Us
                     </Link>
-                    <Link to="/Testimonials" className="hover:text-[#14A660] cursor-pointer">
-                        Testimonials
+                    <Link to="/HappyClients" className="hover:text-[#14A660] cursor-pointer">
+                        Happy Clients
                     </Link>
                     <Link to="/ContactUs" className="hover:text-[#14A660] cursor-pointer">
                         Contact Us
+                    </Link>
+                    <Link to="/OtherServices" className="hover:text-[#14A660] cursor-pointer">
+                        Other Services
                     </Link>
                     {isOpen && (
                     <div

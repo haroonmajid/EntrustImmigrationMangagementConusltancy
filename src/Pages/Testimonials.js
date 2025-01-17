@@ -1,7 +1,10 @@
 import React from 'react'
+import Testimonial from '../Components/TestimonialComponent'
 
-export default function Testimonials() {
+export default function TestimonialComponent() {
   return (
-    <div>Welcome to Testimonials Page</div>
-  )
+    <>
+    <Testimonial/>
+    </>
+      )
 }

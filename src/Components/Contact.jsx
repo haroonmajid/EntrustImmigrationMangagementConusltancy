@@ -128,8 +128,9 @@ const Contact = () => {
   return (
     <div className="pb-[20px] pt-[30px]">
       <div className="text-[#01319f] font-bold text-center">
-        <h1 className="text-[46px] md:text-[64px] leading-snug">
-          <span className='text-[#14A660]'> LOREM IPSUM DOLOR </span>  <br /> SIT AMET.
+        <h1 className="text-[36px] w-[95%] pl-2 md:w-[70%] mx-auto md:text-[46px] leading-snug">
+        Welcome to
+          <span className='text-[#14A660] text-[46px]'>  Entrust Immigration Management Consultancy - </span><span className=''> Your trusted partner for Global Mobility & Immigration services. </span> 
         </h1>
       </div>
       <form
@@ -272,16 +273,8 @@ const Contact = () => {
           </Button>
         </div>
       </form>
-      <div className="max-w-5xl mx-auto px-6 text-center text-[16px] md:text-[20px] leading-relaxed mt-10">
-        {isExpanded
-          ? `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eum? Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro tempore et itaque dolore ipsa id praesentium ut? Corporis quidem fugiat libero adipisci modi consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque quis officia itaque similique architecto sunt rerum consequatur!`
-          : `Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eum? Non quo, ad amet enim alias ullam voluptatem, soluta eligendi porro...`}
-        <button
-          onClick={toggleReadMore}
-          className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
-        >
-          {isExpanded ? 'Show Less' : 'Show More'}
-        </button>
+      <div className="max-w-5xl mx-auto px-6 text-center text-[20px] md:text-[20px] leading-relaxed mt-10">
+      At <span className='text-[#14A660] font-bold text-[24px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
       </div>
     </div>
   );
