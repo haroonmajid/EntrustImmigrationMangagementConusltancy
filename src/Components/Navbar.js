@@ -20,7 +20,6 @@ export default function Navbar() {
                     {/* Hamburger Icon */}
                     <button
                         className="md:hidden hover:text-[#14A660] text-white text-3xl"
-                        onClick={() => setIsOpen(!isOpen)}
                     >
                         <i className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
                     </button>
@@ -28,8 +27,6 @@ export default function Navbar() {
 
                 {/* Navbar Links */}
                 <nav
-                    onMouseLeave={() => setIsOpen(false)}
-                    onMouseOut={()=> setIsOpen(false)}
                     className={`${isOpen ? "flex" : "hidden"
                         } md:flex flex-col md:flex-row items-center text-white text-xl font-semibold gap-5 w-full md:w-auto`}
                 >
