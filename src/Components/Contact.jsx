@@ -77,7 +77,6 @@ const Contact = () => {
 
       // margin: "20px auto",
     },
-    
     input: {
       padding: "20px 0",
       paddingLeft:"45px",
@@ -183,7 +182,7 @@ const Contact = () => {
         inputStyle={customStyles.input}
         buttonStyle={customStyles.dropdown}
         dropdownStyle={customStyles.dropdown}
-        className=""
+        className="focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f]"
         // enableSearch
       />
     </div>
