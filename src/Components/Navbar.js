@@ -58,7 +58,7 @@ export default function Navbar() {
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660]">
-                  <Link to="/student-visa" className="block px-5 py-2 text-white">
+                  <Link to="/EuropeanVisa" className="block px-5 py-2 text-white">
                     European Countries Visa
                   </Link>
                 </li>
