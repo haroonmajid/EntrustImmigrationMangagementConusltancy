@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
-      <h1 className="text-[56px] md:text-[64px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
+      <h1 className="text-[48px] md:text-[64px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
       <span className="text-[#14A660]"> ENTRUST</span> CONSULTANCY
       </h1>
       {/* SKILLED IMMIGRATION */}
