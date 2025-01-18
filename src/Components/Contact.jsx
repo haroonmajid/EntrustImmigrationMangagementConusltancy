@@ -83,7 +83,7 @@ const Contact = () => {
       fontSize: "16px",
       // marginLeft:"40px",
       width:"100%",
-      borderRight:"2px solid #E5E7EB",
+      borderRight:"1px solid #E5E7EB",
 
     },
     dropdown: {
