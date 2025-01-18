@@ -41,7 +41,7 @@ export default function Navbar() {
           <div
             className="relative cursor-pointer"
             onMouseEnter={() => setIsDropdownOpen(true)}
-            onClick={()=> setIsDropdownOpen(true)}
+            onClick={()=> setIsDropdownOpen(!true)}
             // onMouseLeave={() => setIsDropdownOpen(false)}
           >
             <div className="hover:text-[#14A660]">
