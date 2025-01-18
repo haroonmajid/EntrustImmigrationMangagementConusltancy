@@ -80,7 +80,7 @@ const Contact = () => {
     
     input: {
       padding: "20px 0",
-      paddingLeft:"50px",
+      paddingLeft:"45px",
       fontSize: "16px",
       // marginLeft:"40px",
       width:"100%",
@@ -209,9 +209,13 @@ const Contact = () => {
             required
             className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
           >
-            <option value=""selected>Migrate Country</option>
+            <option value=""selected disabled>Migrate Country</option>
             <option value="Canada">Canada</option>
+            <option value="Australia">Europe</option>
+            <option value="Australia">United Kingdom</option>
             <option value="Australia">Australia</option>
+            <option value="Australia">United States Of America</option>
+
           </select>
           <select
             name="nationality"
@@ -268,7 +272,6 @@ const Contact = () => {
             <option value="Work">Work</option>
             <option value="Study">Study</option>
           </select>
-        </div>
         <select
             name="preferredLocation"
             value={formData.preferredLocation}
@@ -280,6 +283,7 @@ const Contact = () => {
             <option value="City A">City A</option>
             <option value="City B">City B</option>
           </select>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           
