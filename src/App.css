@@ -7,7 +7,7 @@
 
 .banner-1 {
     background-image: url(../public/banner1.jpg);
-    background-size: 350px;
+    background-size: 250px;
     width: 100%;
     height: 100px;
     background-position: center;
@@ -16,7 +16,7 @@
 
 .banner-2 {
     background-image: url(../public/banner2.jpg);
-    background-size: 350px;
+    background-size: 150px;
     width: 100%;
     height: 200px;
     background-position: center;
