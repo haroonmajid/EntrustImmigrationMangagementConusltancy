@@ -159,7 +159,7 @@ const Contact = () => {
       </div>
       <form   
         onSubmit={onSubmit}
-        className="max-w-5xl mx-auto px-6 py-5 bg-white shadow-lg rounded-md"
+        className="max-w-5xl mx-auto mt-10 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >
         <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
          <label className="relative">
@@ -245,17 +245,6 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <select
-            name="ageRange"
-            value={formData.ageRange}
-            onChange={handleChange}
-            required
-            className="w-full px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
-          >
-            <option value="">Age Range</option>
-            <option value="18-25">18-25</option>
-            <option value="26-35">26-35</option>
-          </select>
-          <select
             name="education"
             value={formData.education}
             onChange={handleChange}
@@ -279,9 +268,7 @@ const Contact = () => {
             <option value="Study">Study</option>
           </select>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <select
+        <select
             name="preferredLocation"
             value={formData.preferredLocation}
             onChange={handleChange}
@@ -292,6 +279,9 @@ const Contact = () => {
             <option value="City A">City A</option>
             <option value="City B">City B</option>
           </select>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          
         </div>
 
         <div className="flex items-center gap-2 mb-6">

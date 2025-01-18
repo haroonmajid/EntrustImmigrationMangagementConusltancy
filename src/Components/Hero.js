@@ -20,7 +20,7 @@ export default function Hero() {
     <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
       <h1 className="text-[56px] md:text-[64px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
-      <span className="text-[#14A660]"> Entrust</span>  Consultancy
+      <span className="text-[#14A660]"> ENTRUST</span> CONSULTANCY
       </h1>
       {/* SKILLED IMMIGRATION */}
       <div className="text-center md:hidden max-w-screen-2xl mx-auto px-6">
@@ -59,7 +59,7 @@ export default function Hero() {
         <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">WORK PERMIT</span> <br/> IMMIGRATION
         </h1>
-        <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
+        <img src="/work_permit_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded1
             ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
@@ -91,7 +91,7 @@ export default function Hero() {
         <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">TOURIST</span> <br/> VISA
         </h1>
-        <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
+        <img   src="./tourist_visa_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded2
             ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
@@ -177,7 +177,7 @@ export default function Hero() {
           </button>
         </div>
         <img
-          src="./pic-2.PNG"
+          src="./work_permit_banner.jpg"
           alt=""
           className="hidden md:block md:w-1/2 object-cover"
         />
@@ -186,7 +186,7 @@ export default function Hero() {
       {/* Section 3 */}
       <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <img
-          src="./pic-2.PNG"
+          src="./tourist_visa_banner.jpg"
           alt=""
           className="hidden md:block md:w-1/2 object-cover"
         />
