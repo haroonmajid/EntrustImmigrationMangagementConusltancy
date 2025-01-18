@@ -10,6 +10,8 @@ import Testimonial from './Pages/Testimonial';
 import CanadaVisa from './Pages/CanadaVisa';
 import EuropeanVisa from './Pages/EuropeanVisa';
 import UnitedKingdomVisa from './Pages/UnitedKingdomVisa';
+import UsaVisa from './Pages/UsaVisa';
+import AustraliaVisa from './Pages/AustraliaVisa';
 
 function App() {
   console.log(process.env.REACT_APP_APPWRITE_URL);
@@ -23,6 +25,8 @@ function App() {
     <Route path='/CanadaVisa' element={<CanadaVisa/>}/>
     <Route path='/EuropeanVisa' element={<EuropeanVisa/>}/>
     <Route path='/UnitedKingdomVisa' element={<UnitedKingdomVisa/>}/>
+    <Route path='/UsaVisa' element={<UsaVisa/>}/>
+    <Route path='/AustraliaVisa' element={<AustraliaVisa/>}/>
     <Route path='/About' element={<About/>}/>
     <Route path='/Testimonial' element={<Testimonial/>}/>
     <Route path='/ContactUs' element={<ContactUs/>}/>
