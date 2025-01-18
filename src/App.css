@@ -23,3 +23,14 @@
     /* background-size: cover; */
     background-repeat: no-repeat;
 }
+ /* .input-text{
+    @apply text-blue-800 bg-white transform translate-y-9 translate-x-4;
+} */
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:not(:placeholder-shown) ~ .input-text{
+  @apply text-blue-800 bg-white transform -translate-y-5 translate-x-3 scale-95
+  } 
+  input[type="email"]:focus ~ .input-email,
+input[type="email"]:not(:placeholder-shown) ~ .input-email{
+  @apply text-blue-800 bg-white transform -translate-y-5 translate-x-3 scale-95
+  }

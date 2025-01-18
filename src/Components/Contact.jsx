@@ -3,8 +3,11 @@ import { databases } from '../appwrite';
 import { Button } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import "../App.css"
+
 
 const Contact = () => {
+  
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -67,6 +70,26 @@ const Contact = () => {
   ];
 
   const [phone, setPhone] = useState('');
+  const customStyles = {
+    container: {
+      width: "100%",
+      // border: "2px solid #E5E7EB ",
+
+      // margin: "20px auto",
+    },
+    
+    input: {
+      padding: "20px 0",
+      fontSize: "16px",
+      // marginLeft:"40px",
+      width:"100%",
+      borderRight:"2px solid #E5E7EB",
+
+    },
+    dropdown: {
+      border:"none",
+    },
+  };
 
   const [formData, setFormData] = useState({
     name: '',
@@ -124,47 +147,57 @@ const Contact = () => {
   const placeholderStyle = {
     color: 'rgba(0, 0, 0, 0.5)', // Low opacity for placeholder text
   };
+  
 
   return (
     <div className="pb-[20px] pt-[30px]">
       <div className="text-[#01319f] font-bold text-center">
         <h1 className="text-[36px] w-[95%] pl-2 md:w-[70%] mx-auto md:text-[46px] leading-snug">
-        Welcome to
-          <span className='text-[#14A660] text-[46px]'>  Entrust Immigration Management Consultancy - </span><span className=''> Your trusted partner for Global Mobility & Immigration services. </span> 
+        Welcome To
+          <span className='text-[#14A660] text-[46px]'>  Entrust Immigration Management Consultancy  </span><span className='text-[40px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
         </h1>
       </div>
-      <form
+      <form   
         onSubmit={onSubmit}
         className="max-w-5xl mx-auto px-6 py-5 bg-white shadow-lg rounded-md"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <input
+        <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
+         <label className="relative">
+         <input
             type="text"
             name="name"
-            placeholder="Name"
+            // placeholder=""
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className="w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200"
           />
-          <PhoneInput
-            type="text"
-            name="phone"
-            country={'ae'} // Default country (UAE)
-            value={phone}
-            onChange={setPhone}
-            required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
-          />
+          <span className='text-opacity-80 absolute left-0 top-2 mx-2 transition duration-200 input-text px-2 '>Name</span>
+         </label>
+         <div style={customStyles.container}>
+      <PhoneInput
+        country={"us"}
+        value={phone}
+        onChange={setPhone}
+        inputStyle={customStyles.input}
+        buttonStyle={customStyles.dropdown}
+        dropdownStyle={customStyles.dropdown}
+        className=""
+        // enableSearch
+      />
+    </div>
+         <label className="relative">
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            // placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
+            className="w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200"
           />
+          <span className='text-opacity-80 absolute left-0 top-2 mx-2 transition duration-200 input-email px-2 '>Email</span>
+          </label>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -173,9 +206,9 @@ const Contact = () => {
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
+            className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
           >
-            <option value=""selected> Migrate Country</option>
+            <option value=""selected>Migrate Country</option>
             <option value="Canada">Canada</option>
             <option value="Australia">Australia</option>
           </select>
@@ -184,7 +217,7 @@ const Contact = () => {
             value={formData.nationality}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
+            className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
           >
             <option value="">Select Nationality</option>
             {countries.map((country, index) => (
@@ -200,7 +233,7 @@ const Contact = () => {
               value={formData.dob}
               onChange={handleChange}
               required
-              className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+              className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
             />
             {!formData.dob && (
               <span className="md:hidden absolute left-3 top-2 text-gray-400">
@@ -216,7 +249,7 @@ const Contact = () => {
             value={formData.ageRange}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className="w-full px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Age Range</option>
             <option value="18-25">18-25</option>
@@ -227,7 +260,7 @@ const Contact = () => {
             value={formData.education}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Education</option>
             <option value="High School">High School</option>
@@ -239,7 +272,7 @@ const Contact = () => {
             value={formData.immigrationType}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Immigration Type</option>
             <option value="Work">Work</option>
@@ -247,13 +280,13 @@ const Contact = () => {
           </select>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <select
             name="preferredLocation"
             value={formData.preferredLocation}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
           >
             <option value="">Preferred Location</option>
             <option value="City A">City A</option>
