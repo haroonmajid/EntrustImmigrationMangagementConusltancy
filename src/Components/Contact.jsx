@@ -80,6 +80,7 @@ const Contact = () => {
     
     input: {
       padding: "20px 0",
+      paddingLeft:"50px",
       fontSize: "16px",
       // marginLeft:"40px",
       width:"100%",
