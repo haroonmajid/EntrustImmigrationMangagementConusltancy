@@ -5,7 +5,7 @@ function AustraliaVisa() {
   return (
     <>
     <div className='text-center pt-5'> <span className="text-[56px] pt-11 text-[#01319F] underline decoration-[#14A660]  font-bold leading-none">
-                EUROPEAN COUNTRIES
+                AUSTRALIA
             </span></div>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto">
