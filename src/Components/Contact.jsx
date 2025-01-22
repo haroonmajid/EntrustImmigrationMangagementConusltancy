@@ -262,7 +262,7 @@ const Contact = () => {
               value={formData.dob}
               onChange={handleChange}
               required
-              className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+              className="w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
             />
             {!formData.dob && (
               <span className="md:hidden absolute left-3 top-2 text-gray-400">
@@ -279,7 +279,7 @@ const Contact = () => {
             value={formData.education}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.education ? "has-value" : ""
             }`}
           >
@@ -296,7 +296,7 @@ const Contact = () => {
             value={formData.immigrationType}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.immigrationType ? "has-value" : ""
             }`}
           >
@@ -312,7 +312,7 @@ const Contact = () => {
             value={formData.preferredLocation}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.preferredLocation ? "has-value" : ""
             }`}
           >
