@@ -51,6 +51,7 @@ export default function Navbar() {
             </div>
             {isDropdownOpen && (
               <ul
+              onClick={()=>setIsOpen(false)}
               onMouseLeave={() => setIsDropdownOpen(false)}
 
                className="absolute bg-[#01319F] mt-2 w-[200px] text-left rounded shadow-lg">
