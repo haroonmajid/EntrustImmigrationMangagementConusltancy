@@ -7,14 +7,15 @@ import "../App.css"
 
 
 const Contact = () => {
-  
+  const [isPopupVisible, setIsPopupVisible] = useState(true);
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    setIsPopupVisible(true);
 
     formData.append("access_key", "00b0b9bb-4105-4cea-8e5c-a4ee790d5051");
 
-    const object = Object.fromEntries(formData);
+    const object = Object.fromEntries(formData,phone);
     const json = JSON.stringify(object);
 
     const res = await fetch("https://api.web3forms.com/submit", {
@@ -42,6 +43,9 @@ const Contact = () => {
       preferredLocation: '',
     });
     setPhone('');
+  };
+  const closePopup = () => {
+    setIsPopupVisible(false); // Hide the popup
   };
   const countries = [
     'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia',
@@ -208,12 +212,12 @@ const Contact = () => {
             required
             className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
           >
-            <option value=""selected disabled>Migrate Country</option>
+            <option value=""selected>Migrate Country</option>
             <option value="Canada">Canada</option>
-            <option value="Australia">Europe</option>
-            <option value="Australia">United Kingdom</option>
+            <option value="Europe">Europe</option>
+            <option value="UnitedKingdom">United Kingdom</option>
             <option value="Australia">Australia</option>
-            <option value="Australia">United States Of America</option>
+            <option value="UnitedStates">United States Of America</option>
 
           </select>
           <select
@@ -303,6 +307,39 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto px-6 text-center text-[20px] md:text-[20px] leading-relaxed mt-10">
       At <span className='text-[#14A660] font-bold text-[24px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
       </div>
+      {isPopupVisible && (
+        <div
+          style={{
+            position: "fixed",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            backgroundColor: "white",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            zIndex: 1000,
+            textAlign: "center",
+          }}
+        >
+          <h2 className='py-11'>Thank you for your submission!</h2>
+          <button
+            onClick={closePopup}
+            style={{
+              padding: "10px 20px",
+              backgroundColor:"#01319f",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            Close
+          </button>
+        </div>
+      )}
+
+
     </div>
   );
 };
