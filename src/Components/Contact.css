@@ -22,9 +22,9 @@
     transition: border-color 0.3s ease-in-out;
   }
   
-  .floating-input:focus {
+  /* .floating-input:focus {
     border-bottom: 2px solid #007bff;
-  }
+  } */
   
   .floating-label {
     position: absolute;
