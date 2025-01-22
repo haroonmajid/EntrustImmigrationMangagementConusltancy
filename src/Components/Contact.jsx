@@ -222,7 +222,7 @@ const Contact = () => {
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 py-0 bg-transparent h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.migrateCountry ? "has-value" : ""
             }`}
           >
@@ -242,7 +242,7 @@ const Contact = () => {
             value={formData.nationality}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] ${
+            className={`floating-input w-full bg-transparent px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] ${
               formData.nationality ? "has-value" : ""
             }`}
           >
