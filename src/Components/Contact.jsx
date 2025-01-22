@@ -7,7 +7,7 @@ import "../App.css"
 
 
 const Contact = () => {
-  const [isPopupVisible, setIsPopupVisible] = useState(true);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
