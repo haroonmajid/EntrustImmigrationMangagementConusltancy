@@ -30,16 +30,8 @@ export default function Hero() {
         <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded
-            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
-          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
-          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
-          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
-          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
-          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
-          deleniti distinctio cum voluptas!`
-            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+            ? `At Entrust Immigration Management Consultancy, we specialize in guiding skilled professionals toward securing opportunities in some of the world's most sought-after destinations. Skilled immigration programs are designed to attract individuals with the expertise, qualifications, and work experience that contribute to economic growth and innovation.`
+            : `At Entrust Immigration Management Consultancy, we specialize in guiding skilled professionals toward securing opportunities in some of the world's most sought-after destinations...`}
           <button
             onClick={toggleReadMore}
             className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
@@ -62,16 +54,8 @@ export default function Hero() {
         <img src="/work_permit_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded1
-            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
-          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
-          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
-          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
-          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
-          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
-          deleniti distinctio cum voluptas!`
-            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+            ? `Unlock global career opportunities with Entrust Immigration Management Consultancy. Work permit immigration allows individuals to live and work abroad while gaining international experience and advancing their professional growth. Whether you’re a skilled worker, a professional, or someone seeking short-term work opportunities, we’re here to guide you every step of the way.`
+            : `Unlock global career opportunities with Entrust Immigration Management Consultancy...`}
           <button
             onClick={toggleReadMore1}
             className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
@@ -94,16 +78,8 @@ export default function Hero() {
         <img   src="./tourist_visa_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded2
-            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
-          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
-          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
-          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
-          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
-          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
-          deleniti distinctio cum voluptas!`
-            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+            ? `Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations, diverse cultures, and unforgettable adventures. Whether you're planning a vacation, visiting loved ones, or exploring new horizons, we’re here to make the process seamless and stress-free.`
+            : `Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations,...`}
           <button
             onClick={toggleReadMore2}
             className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
@@ -121,7 +97,7 @@ export default function Hero() {
       </div>
 
       {/* Section 1 */}
-      <div className="md:flex flex-col hidden md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex flex-col hidden md:items-center md:gap-11 md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <img
           src="./pic-2.PNG"
           alt=""
@@ -132,15 +108,7 @@ export default function Hero() {
             <span className="text-[#14A660]">SKILLED</span> <br /> IMMIGRATION
           </span>
           <p className="text-[18px] py-6 sm:py-4 text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
-            iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
-            consectetur velit! Error, earum. Voluptas veritatis ratione
-            exercitationem sint aut alias rerum asperiores quae ea fuga impedit
-            provident, eligendi minus corrupti ut dignissimos quod ad ab iure.
-            Ipsam alias nihil inventore Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. At, quaerat suscipit id modi libero quae in, rerum
-            molestiae, asperiores magnam assumenda accusamus laudantium nisi error
-            vel dolor esse expedita adipisci.
+          At Entrust Immigration Management Consultancy, we specialize in guiding skilled professionals toward securing opportunities in some of the world's most sought-after destinations. Skilled immigration programs are designed to attract individuals with the expertise, qualifications, and work experience that contribute to economic growth and innovation.
           </p>
           <button
             type="submit"
@@ -153,21 +121,14 @@ export default function Hero() {
       </div>
 
       {/* Section 2 */}
-      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex hidden items-center flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
+          <sp363
+          an className="text-[48px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">WORK PERMIT</span> <br /> IMMIGRATION
-          </span>
-          <p className="text-[18px] py-6 sm:py-4 text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
-            iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
-            consectetur velit! Error, earum. Voluptas veritatis ratione
-            exercitationem sint aut alias rerum asperiores quae ea fuga impedit
-            provident, eligendi minus corrupti ut dignissimos quod ad ab iure.
-            Ipsam alias nihil inventore Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. At, quaerat suscipit id modi libero quae in, rerum
-            molestiae, asperiores magnam assumenda accusamus laudantium nisi error
-            vel dolor esse expedita adipisci.
+          </sp363>
+          <p className="text-[18px] py-11 sm:py-4 text-justify">
+          Unlock global career opportunities with Entrust Immigration Management Consultancy. Work permit immigration allows individuals to live and work abroad while gaining international experience and advancing their professional growth. Whether you’re a skilled worker, a professional, or someone seeking short-term work opportunities, we’re here to guide you every step of the way.
           </p>
           <button
             type="submit"
@@ -195,15 +156,7 @@ export default function Hero() {
             <span className="text-[#14A660]">TOURIST</span> <br /> VISA
           </span>
           <p className="text-[18px] py-6 sm:py-4 text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe
-            iusto officia, impedit illum magni possimus blanditiis voluptatum, vel
-            consectetur velit! Error, earum. Voluptas veritatis ratione
-            exercitationem sint aut alias rerum asperiores quae ea fuga impedit
-            provident, eligendi minus corrupti ut dignissimos quod ad ab iure.
-            Ipsam alias nihil inventore Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. At, quaerat suscipit id modi libero quae in, rerum
-            molestiae, asperiores magnam assumenda accusamus laudantium nisi error
-            vel dolor esse expedita adipisci.
+          Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations, diverse cultures, and unforgettable adventures. Whether you're planning a vacation, visiting loved ones, or exploring new horizons, we’re here to make the process seamless and stress-free.
           </p>
           <button
             type="submit"

@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const handleDropdown = () =>{
+    setIsDropdownOpen((prevState) => !prevState); 
 
+  }
   const handleCallNow = () => {
     window.location.href = "tel:+971 55 905 5498";
   };
@@ -41,10 +44,7 @@ export default function Navbar() {
           <div
             className="relative cursor-pointer"
             onMouseEnter={() => setIsDropdownOpen(true)}
-            onClick={()=> setIsDropdownOpen(true, false)}
-            // onClick={()=> setIsDropdownOpen(false)}
-
-            // onMouseLeave={() => setIsDropdownOpen(false)}
+            onClick={handleDropdown}
           >
             <div className="hover:text-[#14A660]">
               Visas <i className="fa-solid fa-chevron-down text-sm ml-2"></i>
