@@ -3,7 +3,7 @@ import { databases } from '../appwrite';
 import { Button } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import "../App.css"
+import "./Contact.css"
 
 
 const Contact = () => {
@@ -111,6 +111,10 @@ const Contact = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const [success, setSuccess] = useState(false);
@@ -166,18 +170,22 @@ const Contact = () => {
         className="max-w-5xl mx-auto mt-10 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >
         <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
-         <label className="relative">
-         <input
+        <div className='input-wrapper'>
+        <input
             type="text"
             name="name"
             // placeholder=""
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200"
+            className={ `floating-input w-full px-4 py-0 h-11 border bg-transparent rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200 ${
+              formData.name ? "has-value" : ""
+            }`}
+           
           />
-          <span className='text-opacity-80 absolute left-0 top-2 mx-2 transition duration-200 input-text px-2 '>Name</span>
-         </label>
+        <label className="floating-label">Name</label>
+        </div>
+
          <div style={customStyles.container}>
       <PhoneInput
         country={"us"}
@@ -190,7 +198,7 @@ const Contact = () => {
         // enableSearch
       />
     </div>
-         <label className="relative">
+          <div className='input-wrapper'>
           <input
             type="email"
             name="email"
@@ -198,42 +206,55 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200"
+            className={`floating-input w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200 ${
+            formData.email ? "has-value" : ""
+          }`
+            }
           />
-          <span className='text-opacity-80 absolute left-0 top-2 mx-2 transition duration-200 input-email px-2 '>Email</span>
-          </label>
+        <label className="floating-label">Email</label>
+        </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className='input-wrapper'>
           <select
             name="migrateCountry"
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5)"
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.migrateCountry ? "has-value" : ""
+            }`}
           >
-            <option value=""selected>Migrate Country</option>
+            <option value=""selected disabled></option>
             <option value="Canada">Canada</option>
             <option value="Europe">Europe</option>
             <option value="UnitedKingdom">United Kingdom</option>
             <option value="Australia">Australia</option>
             <option value="UnitedStates">United States Of America</option>
-
           </select>
+          <label className="floating-label">Migrate Country</label>
+          </div>
+
+          <div className='input-wrapper'>
           <select
             name="nationality"
             value={formData.nationality}
             onChange={handleChange}
             required
-            className="w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F]"
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] ${
+              formData.nationality ? "has-value" : ""
+            }`}
           >
-            <option value="">Select Nationality</option>
+            <option value="" selected></option>
             {countries.map((country, index) => (
               <option key={index} value={country}>
                 {country}
               </option>
             ))}
           </select>
+          <label className="floating-label">Nationality</label>
+          </div>
           <div className="relative">
             <input
               type="date"
@@ -252,40 +273,55 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className='input-wrapper'>
           <select
             name="education"
             value={formData.education}
             onChange={handleChange}
             required
-            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.education ? "has-value" : ""
+            }`}
           >
-            <option value="">Education</option>
-            <option value="High School">High School</option>
-            <option value="Bachelor's">Bachelor's</option>
-            <option value="Master's">Master's</option>
-          </select>
+            <option value=""selected disabled></option>
+            <option value="Canada">Intermediate</option>
+            <option value="Europe">Bachelor's</option>
+            <option value="UnitedKingdom">Master</option>
+            </select>
+          <label className="floating-label">Education</label>
+          </div>
+          <div className='input-wrapper'>
           <select
             name="immigrationType"
             value={formData.immigrationType}
             onChange={handleChange}
             required
-            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.immigrationType ? "has-value" : ""
+            }`}
           >
-            <option value="">Immigration Type</option>
-            <option value="Work">Work</option>
-            <option value="Study">Study</option>
-          </select>
-        <select
+            <option value=""selected disabled></option>
+            <option value="Canada">Study</option>
+            <option value="Europe">Work</option>
+            </select>
+          <label className="floating-label">Immigration Type</label>
+          </div>
+          <div className='input-wrapper'>
+          <select
             name="preferredLocation"
             value={formData.preferredLocation}
             onChange={handleChange}
             required
-            className="w-full p-2 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.preferredLocation ? "has-value" : ""
+            }`}
           >
-            <option value="">Preferred Location</option>
-            <option value="City A">City A</option>
-            <option value="City B">City B</option>
-          </select>
+            <option value=""selected disabled></option>
+            <option value="Canada">City A</option>
+            <option value="Europe">City B</option>
+            </select>
+          <label className="floating-label">Preferrd Location</label>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
