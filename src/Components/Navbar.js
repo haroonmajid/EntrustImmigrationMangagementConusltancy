@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between w-full md:w-auto">
           {/* Logo */}
           <Link to="/" className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
-            <img className="w-[40%] h-[40%]" src="./entrust-logo1.png" alt="Entrust Logo" />
+            <img className="w-[50%] h-[50%]" src="./entrust-logo1.png" alt="Entrust Logo" />
           </Link>
 
           {/* Hamburger Icon */}
