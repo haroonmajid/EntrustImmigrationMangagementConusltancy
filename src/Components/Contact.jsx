@@ -255,19 +255,21 @@ const Contact = () => {
           </select>
           <label className="floating-label">Nationality</label>
           </div>
-          <div className="relative">
+          <div className="input-wrapper">
             <input
               type="date"
               name="dob"
               value={formData.dob}
               onChange={handleChange}
               required
-              className="w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f]"
+              className={`floating-input w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f] ${
+                formData.dob ? "has-value" : ""
+              }`}
             />
             {!formData.dob && (
-              <span className="md:hidden absolute left-3 top-2 text-gray-400">
+              <label className="floating-label md:hidden absolute left-3 top-2 text-gray-400">
                 DD/MM/YYYY
-              </span>
+              </label>
             )}
           </div>
         </div>
@@ -312,7 +314,7 @@ const Contact = () => {
             value={formData.preferredLocation}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.preferredLocation ? "has-value" : ""
             }`}
           >
