@@ -14,19 +14,8 @@ export default function Section1() {
         </h1>
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded
-            ? `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis, nam
-          aperiam distinctio quisquam suscipit aut dolores exercitationem cumque
-          officiis ad quis nulla! Amet delectus neque magnam praesentium, voluptas
-          numquam, possimus nam deleniti blanditiis laborum, in quisquam alias
-          tempora sunt ea. Nulla labore obcaecati impedit minus sunt autem
-          recusandae repellendus quo, iste aliquid, ea aspernatur cupiditate
-          deleniti distinctio cum voluptas! Ipsam temporibus molestiae dicta
-          soluta aspernatur quibusdam ducimus animi dolore, nulla fugit porro et
-          nisi at reiciendis esse explicabo ullam voluptatum facere tempore
-          officiis obcaecati maiores cumque, ipsum repudiandae! Fugiat, ipsa?`
-            : `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          tempora id dolorum aliquam totam ab natus, doloribus reiciendis,...`}
+            ? `The world is on the move, and opportunities are waiting for you! At Entrust Immigration Consultants, we are here to guide you every step of the way as you embark on your immigration journey. Whether you're pursuing a better future, advancing your career, or reuniting with loved ones, our experienced team specializes in providing personalized immigration solutions tailored to your unique needs. Why wait? Join the growing wave of individuals and families who are transforming their lives through immigration. Take the first step toward a brighter tomorrow with Entrust Immigration Consultants – your trusted partner in making dreams a reality.`
+            : `The world is on the move, and opportunities are waiting for you! At Entrust Immigration Consultants, we are here to guide you every step of the way as you embark on your immigration journey...`}
           <button
             onClick={toggleReadMore}
             className="ml-2 text-[#14A660] font-bold hover:text-[#01319f] focus:outline-none"
