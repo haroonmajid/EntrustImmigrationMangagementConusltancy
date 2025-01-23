@@ -268,8 +268,8 @@ const Contact = () => {
             />
             {!formData.dob && (
               <label className="floating-label md:hidden absolute left-3 top-2 text-gray-400">
-                DD/MM/YYYY
-              </label>
+                Date Of Birth
+                              </label>
             )}
           </div>
         </div>
