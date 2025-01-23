@@ -11,7 +11,7 @@ function Section2() {
   return (
     <>
       <div className="text-center max-w-screen-xl mx-auto py-12 px-6">
-        <h2 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[54px] mb-8">
+        <h2 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[48px] mb-8">
           <span className="text-[#14A660]">GET CLOSER</span> TO YOUR IMMIGRATION DREAMS
         </h2>
         <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[18px] leading-relaxed max-w-5xl mx-auto mt-10">

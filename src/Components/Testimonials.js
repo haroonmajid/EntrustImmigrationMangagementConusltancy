@@ -4,7 +4,7 @@ export default function Testimonials() {
   return (
     <section class="text-black body-font">
   <div class="max-w-screen-xl px-5 pt-24 pb-12 mx-auto">
-    <h1 class="title-font text-[#14A660] text-[38px] md:text-[54px] text-center font-bold sm:mb-8">Testimonials</h1>
+    <h1 class="title-font text-[#14A660] text-[38px] md:text-[48px] text-center font-bold sm:mb-8">Testimonials</h1>
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/2 w-full">
         <div class="h-full bg-gray-100 p-8 rounded">

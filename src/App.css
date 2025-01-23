@@ -42,7 +42,7 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
     }
   } */
 
-.navbar .home {
+.navbar {
   font-family:"Baskervville", serif;
   font-weight: 400;
   font-style: normal;
