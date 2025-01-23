@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../App.css"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,9 +35,9 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center text-white text-[16px] font-medium gap-7 w-full md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-white text-[16px] font-medium gap-7 w-full md:w-auto`}
         >
-          <Link to="/" className="hover:text-[#14A660] cursor-pointer"
+          <Link to="/" className="hover:text-[#14A660] home cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
 >
             Home

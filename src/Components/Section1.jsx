@@ -9,10 +9,10 @@ export default function Section1() {
   return (
     <>
       <div className="text-center max-w-screen-xl mx-auto py-12 px-6">
-        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[54px]  mb-6">
           <span className="text-[#14A660]">JOIN</span> THE IMMIGRATION BOOM
         </h1>
-        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
+        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[18px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded
             ? `The world is on the move, and opportunities are waiting for you! At Entrust Immigration Consultants, we are here to guide you every step of the way as you embark on your immigration journey. Whether you're pursuing a better future, advancing your career, or reuniting with loved ones, our experienced team specializes in providing personalized immigration solutions tailored to your unique needs. Why wait? Join the growing wave of individuals and families who are transforming their lives through immigration. Take the first step toward a brighter tomorrow with Entrust Immigration Consultants – your trusted partner in making dreams a reality.`
             : `The world is on the move, and opportunities are waiting for you! At Entrust Immigration Consultants, we are here to guide you every step of the way as you embark on your immigration journey...`}

@@ -163,7 +163,7 @@ const Contact = () => {
         <h1 className="w-[95%] pl-2 md:w-[70%] mx-auto text-[30px] md:text-[42px] leading-snug">
         Welcome To
         <br />
-          <span className='text-[#14A660] text-[40px] md:text-[56px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
+          <span className='text-[#14A660] text-[38px] md:text-[54px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
         </h1>
       </div>
       <form   
@@ -343,8 +343,8 @@ const Contact = () => {
           </Button>
         </div>
       </form>
-      <div className="max-w-5xl mx-auto px-6 text-center text-[20px] md:text-[20px] leading-relaxed mt-10">
-      At <span className='text-[#14A660] font-bold text-[24px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
+      <div className="max-w-5xl mx-auto px-6 text-center text-[18px] md:text-[18px] leading-relaxed mt-10">
+      At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
       </div>
       {isPopupVisible && (
         <div

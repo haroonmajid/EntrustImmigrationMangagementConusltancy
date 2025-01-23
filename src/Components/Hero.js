@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
-      <h1 className="text-[40px] md:text-[56px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
+      <h1 className="text-[38px] md:text-[54px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
       <span className="text-[#14A660]"> ENTRUST</span> CONSULTANCY
       </h1>
       {/* SKILLED IMMIGRATION */}
@@ -76,7 +76,7 @@ export default function Hero() {
           <span className="text-[#14A660]">TOURIST</span> <br/> VISA
         </h1>
         <img   src="./tourist_visa_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
-        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[20px] leading-relaxed max-w-5xl mx-auto mt-10">
+        <div className="w-[90%] md:w-[85%] text-justify text-[16px] md:text-[18px] leading-relaxed max-w-5xl mx-auto mt-10">
           {isExpanded2
             ? `Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations, diverse cultures, and unforgettable adventures. Whether you're planning a vacation, visiting loved ones, or exploring new horizons, we’re here to make the process seamless and stress-free.`
             : `Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations,...`}
@@ -104,10 +104,10 @@ export default function Hero() {
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
+          <span className="text-[46px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">SKILLED</span> <br /> IMMIGRATION
           </span>
-          <p className="text-[18px] py-6 sm:py-4 text-justify">
+          <p className="text-[16px] py-6 sm:py-4 text-justify">
           At Entrust Immigration Management Consultancy, we specialize in guiding skilled professionals toward securing opportunities in some of the world's most sought-after destinations. Skilled immigration programs are designed to attract individuals with the expertise, qualifications, and work experience that contribute to economic growth and innovation.
           </p>
           <button
@@ -124,10 +124,10 @@ export default function Hero() {
       <div className="md:flex hidden items-center flex-col md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
         <div className="text-center md:text-left py-6">
           <sp363
-          an className="text-[48px] text-[#01319f] font-bold leading-tight">
+          an className="text-[46px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">WORK PERMIT</span> <br /> IMMIGRATION
           </sp363>
-          <p className="text-[18px] py-11 sm:py-4 text-justify">
+          <p className="text-[16px] py-11 sm:py-4 text-justify">
           Unlock global career opportunities with Entrust Immigration Management Consultancy. Work permit immigration allows individuals to live and work abroad while gaining international experience and advancing their professional growth. Whether you’re a skilled worker, a professional, or someone seeking short-term work opportunities, we’re here to guide you every step of the way.
           </p>
           <button
@@ -152,10 +152,10 @@ export default function Hero() {
           className="hidden md:block md:w-1/2 object-cover"
         />
         <div className="text-center md:text-left py-6">
-          <span className="text-[48px] text-[#01319f] font-bold leading-tight">
+          <span className="text-[46px] text-[#01319f] font-bold leading-tight">
             <span className="text-[#14A660]">TOURIST</span> <br /> VISA
           </span>
-          <p className="text-[18px] py-6 sm:py-4 text-justify">
+          <p className="text-[16px] py-6 sm:py-4 text-justify">
           Explore the world with ease through Entrust Immigration Management Consultancy. A tourist visa is your gateway to experiencing breathtaking destinations, diverse cultures, and unforgettable adventures. Whether you're planning a vacation, visiting loved ones, or exploring new horizons, we’re here to make the process seamless and stress-free.
           </p>
           <button

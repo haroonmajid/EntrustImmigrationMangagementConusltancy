@@ -31,7 +31,7 @@ export default function Section3() {
 
   return (
     <section className="py-10 text-center max-w-screen-xl px-6 mx-auto">
-      <h2 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[56px] mb-8">
+      <h2 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[54px] mb-8">
         OUR SERVICES
       </h2>
       <div className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 py-8">
