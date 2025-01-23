@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between w-full md:w-auto">
           {/* Logo */}
           <Link to="/" className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
-            <img className="w-[60%] h-[60%]" src="./entrust-logo1.png" alt="Entrust Logo" />
+            <img className="w-[40%] h-[40%]" src="./entrust-logo1.png" alt="Entrust Logo" />
           </Link>
 
           {/* Hamburger Icon */}
@@ -34,7 +34,7 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center text-white text-lg font-medium gap-7 w-full md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} md:flex flex-col md:flex-row items-center text-white text-[16px] font-medium gap-7 w-full md:w-auto`}
         >
           <Link to="/" className="hover:text-[#14A660] cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
