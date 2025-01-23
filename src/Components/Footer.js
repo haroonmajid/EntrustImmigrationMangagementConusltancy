@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
     return (
         <footer class="text-black shadow-2xl">
-            <div class="max-w-screen-xl px-5 pb-24 pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto md:text-left">
+            <div class="max-w-screen-xl px-5 pb-24 pt-12 mx-auto flex md:items-center md:justify-between lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center">
                     <a class="flex title-font font-medium justify-center items-center text-white mb-4 md:mb-0">
                         <Link to='/' className="flex hover:text-[#14A660] title-font font-medium justify-center items-center text-white">
                             <img className="w-[60%] h-[60%]" src="./entrust-logo.png" alt="" />
@@ -32,13 +32,12 @@ export default function Footer() {
                         </a>
                     </span>
                 </div>
-                <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-between">
-                    <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+                <div class="md:flex gap-11 -mb-10 md:mt-0 mt-10 text-center justify-between">
+                    <div class="lg:w-1/3 md:w-1/3 w-full ">
                         <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">Services</h2>
                         <nav class="list-none mb-10">
                             <li>
-                                <a class="text-black hover:text-[#01319f] cursor-pointer
-            ">Canada Immigration</a>
+                                <a class="text-black hover:text-[#01319f] cursor-pointer">Canada Immigration</a>
                             </li>
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Austraila Immigration</a>

@@ -19,12 +19,12 @@ export default function Hero() {
   return (
     <div className="pb-[30px] sm:py-8">
       {/* Title Section */}
-      <h1 className="text-[48px] md:text-[64px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
+      <h1 className="text-[40px] md:text-[56px] text-[#01319f] text-center py-12 font-bold sm:mb-8">
       <span className="text-[#14A660]"> ENTRUST</span> CONSULTANCY
       </h1>
       {/* SKILLED IMMIGRATION */}
       <div className="text-center md:hidden max-w-screen-2xl mx-auto px-6">
-        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[36px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">SKILLED</span> <br/> IMMIGRATION
         </h1>
         <img src="/pic-2.PNG" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
@@ -48,7 +48,7 @@ export default function Hero() {
           </button>
       </div>
       <div className="text-center md:hidden max-w-screen-2xl mx-auto py-12 px-6">
-        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[36px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">WORK PERMIT</span> <br/> IMMIGRATION
         </h1>
         <img src="/work_permit_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
@@ -72,7 +72,7 @@ export default function Hero() {
           </button>
       </div>
       <div className="text-center md:hidden max-w-screen-2xl mx-auto px-6">
-        <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
+        <h1 className="text-[#01319f] font-bold leading-none text-[36px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">TOURIST</span> <br/> VISA
         </h1>
         <img   src="./tourist_visa_banner.jpg" alt="Skilled Immigration" className="w-full max-w-screen-lg mx-auto" />
