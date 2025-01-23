@@ -14,9 +14,9 @@ export default function Navbar() {
 
   return (
     <header className="NavbarHeader text-gray-400 sticky top-0 z-10 bg-[#01319F] body-font">
-      <div className="max-w-screen-xl mx-auto flex flex-wrap p-5 items-center justify-center md:justify-between">
+      <div className="max-w-screen-xl mx-auto flex flex-wrap p-5 items-center justify-center md:justify-around">
         {/* Logo and Hamburger Icon */}
-        <div className="flex items-center justify-between w-full md:w-auto">
+        <div v className="flex items-center justify-between w-full md:w-auto">
           {/* Logo */}
           <Link to="/" className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
             <img className="w-[50%] h-[50%]" src="./entrust-logo1.png" alt="Entrust Logo" />
