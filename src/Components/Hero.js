@@ -97,7 +97,7 @@ export default function Hero() {
       </div>
 
       {/* Section 1 */}
-      <div className="md:flex flex-col hidden md:items-center md:gap-11 md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex flex-col hidden md:items-center md:gap-11 md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
         <img
           src="./pic-2.PNG"
           alt=""
@@ -121,7 +121,7 @@ export default function Hero() {
       </div>
 
       {/* Section 2 */}
-      <div className="md:flex hidden items-center flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex hidden items-center flex-col md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
         <div className="text-center md:text-left py-6">
           <sp363
           an className="text-[48px] text-[#01319f] font-bold leading-tight">
@@ -145,7 +145,7 @@ export default function Hero() {
       </div>
 
       {/* Section 3 */}
-      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-2xl mx-auto px-4">
+      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
         <img
           src="./tourist_visa_banner.jpg"
           alt=""

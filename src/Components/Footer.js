@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
     return (
         <footer class="text-black shadow-2xl">
-            <div class="container px-5 pb-24 pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <div class="max-w-screen-xl px-5 pb-24 pt-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto md:text-left">
                     <a class="flex title-font font-medium justify-center items-center text-white mb-4 md:mb-0">
                         <Link to='/' className="flex hover:text-[#14A660] title-font font-medium justify-center items-center text-white">
                             <img className="w-[60%] h-[60%]" src="./entrust-logo.png" alt="" />
                         </Link>
                     </a>
-                    <p class="mt-2 text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="mt-2 text-[12px] text-black text-justify">Welcome To Entrust Immigration Management Consultancy. Your Trusted Partner For Global Mobility & Immigration Services.</p>
                     <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 pt-10 justify-center sm:justify-start">
                         <a href='https://www.facebook.com/profile.php?id=61572185520178' target="_blank" class="text-[#01319f]">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">

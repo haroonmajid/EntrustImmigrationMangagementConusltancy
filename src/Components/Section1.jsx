@@ -8,7 +8,7 @@ export default function Section1() {
   };
   return (
     <>
-      <div className="text-center max-w-screen-2xl mx-auto py-12 px-6">
+      <div className="text-center max-w-screen-xl mx-auto py-12 px-6">
         <h1 className="text-[#01319f] font-bold leading-none text-[40px] md:text-[64px]  mb-6">
           <span className="text-[#14A660]">JOIN</span> THE IMMIGRATION BOOM
         </h1>

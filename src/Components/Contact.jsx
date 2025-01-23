@@ -160,9 +160,10 @@ const Contact = () => {
   return (
     <div className="pb-[20px] pt-[30px]">
       <div className="text-[#01319f] font-bold text-center">
-        <h1 className="text-[36px] w-[95%] pl-2 md:w-[70%] mx-auto md:text-[46px] leading-snug">
+        <h1 className="text-[24px] w-[95%] pl-2 md:w-[70%] mx-auto md:text-[42px] leading-snug">
         Welcome To
-          <span className='text-[#14A660] text-[46px]'>  Entrust Immigration Management Consultancy  </span><span className='text-[40px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
+        <br />
+          <span className='text-[#14A660] text-[24px] md:text-[42px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[24px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
         </h1>
       </div>
       <form   
