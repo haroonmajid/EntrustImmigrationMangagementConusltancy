@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden hover:text-[#14A660] pl-1 text-white text-3xl"
+            className="md:hidden hover:text-[#14A660] pr-2 text-white text-3xl"
             onClick={() => setIsOpen(!isOpen)}
           >
             <i className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
