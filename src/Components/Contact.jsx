@@ -159,7 +159,7 @@ const Contact = () => {
 
   return (
     <div className="pb-[20px]">
-      <div className="text-white h-[90vh] md:h-[100vh] hero1 flex flex-col pt-[25%] md:pt-[10%] font-bold text-left">
+      <div className="text-white h-[110vh] md:h-[100vh] hero1 flex flex-col pt-[25%] md:pt-[10%] font-bold text-left">
         <h1 className="w-[95%] hero1-heading pl-2 md:w-[60%] mx-auto text-[30px] md:text-[42px] leading-snug">
         Welcome To
         <br />
