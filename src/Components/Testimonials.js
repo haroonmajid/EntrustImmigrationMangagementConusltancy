@@ -1,13 +1,14 @@
 import React from 'react'
+import "../App.css"
 
 export default function Testimonials() {
   return (
-    <section class="text-black body-font">
-      <div class="max-w-screen-xl px-5 pt-24 pb-12 mx-auto">
-        <h2 className="text-[#01319f] text-center font-bold leading-none text-[38px] md:text-[48px] mb-8">
-          <span className="text-[#14A660]">HAPPY</span> CLIENTS</h2>
-      <img src="./happy-clients-banner.jpg" alt="" />
-        <div class="flex flex-wrap -m-4">
+    <section class="text-black my-10 testimonial-section body-font">
+      <div class="max-w-screen-xl  px-5 pt-24 pb-12 mx-auto">
+        <h2 className="text-[#14A660] text-center font-bold leading-none text-[38px] md:text-[48px] mb-8">
+         <span className=''>HAPPY</span>  CLIENTS
+        </h2>
+        <div class="flex flex-wrap pt-10 -m-4">
           <div class="p-4 md:w-1/2 w-full">
             <div class="h-full bg-gray-100 p-8 rounded">
               <svg xmlns="http://www.w3.org/2000/svg" fill="#01319f" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">

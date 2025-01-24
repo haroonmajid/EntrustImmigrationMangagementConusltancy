@@ -47,3 +47,12 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   font-weight: 900;
   font-style: normal;
 }
+
+.testimonial-section{
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./Images/happy-clients-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
