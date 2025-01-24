@@ -45,3 +45,12 @@
     color: #01319F;
   }
   
+  .hero1{
+    /* background-image: url(../public/happy-clients-banner.jpg); */
+    background-image: url(D:\Web-Development-Projects\entrust-immigration-management-consultant\public\hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  

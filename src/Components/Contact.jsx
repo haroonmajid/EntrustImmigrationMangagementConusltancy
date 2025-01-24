@@ -158,17 +158,20 @@ const Contact = () => {
   
 
   return (
-    <div className="pb-[20px] pt-[30px]">
-      <div className="text-[#01319f] font-bold text-center">
-        <h1 className="w-[95%] pl-2 md:w-[70%] mx-auto text-[30px] md:text-[42px] leading-snug">
+    <div className="pb-[20px]">
+      <div className="text-white h-[90vh] md:h-[100vh] hero1 flex flex-col pt-[25%] md:pt-[10%] font-bold text-left">
+        <h1 className="w-[95%] hero1-heading pl-2 md:w-[60%] mx-auto text-[30px] md:text-[42px] leading-snug">
         Welcome To
         <br />
-          <span className='text-[#14A660] text-[38px] md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
+          <span className='text-white text-[38px] md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
         </h1>
+        <div className="md:w-[60%] pl-2 w-[95%] mx-auto text-left text-[18px] md:text-[18px] leading-relaxed mt-10">
+      At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
+      </div>
       </div>
       <form   
         onSubmit={onSubmit}
-        className="max-w-5xl mx-auto mt-10 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
+        className="max-w-5xl mx-auto mt-20 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >
         <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
         <div className='input-wrapper'>

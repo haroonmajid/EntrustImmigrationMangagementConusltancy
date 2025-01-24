@@ -42,8 +42,8 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
     }
   } */
 
-.navbar {
+.navbar .link {
   font-family:"Baskervville", serif;
-  font-weight: 400;
+  font-weight: 900;
   font-style: normal;
 }

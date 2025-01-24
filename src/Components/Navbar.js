@@ -14,18 +14,18 @@ export default function Navbar() {
   };
 
   return (
-    <header className="NavbarHeader text-gray-400 sticky top-0 z-10 bg-[#01319F] body-font">
+    <header className="NavbarHeader shadow-2xl sticky top-0 z-10 bg-white">
       <div className="max-w-screen-xl mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
         {/* Logo and Hamburger Icon */}
-        <div v className="flex items-center justify-between w-full md:w-auto">
+        <div v className="flex items-center pl-3 justify-between w-full md:w-auto">
           {/* Logo */}
           <Link to="/" className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
-            <img className="w-[50%] h-[50%]" src="./entrust-logo1.png" alt="Entrust Logo" />
+            <img className="w-[50%] h-[50%]" src="./entrust-logo.png" alt="Entrust Logo" />
           </Link>
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden hover:text-[#14A660] pr-2 text-white text-3xl"
+            className="md:hidden hover:text-[#14A660] pr-2 text-[#01319F] text-3xl"
             onClick={() => setIsOpen(!isOpen)}
           >
             <i className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
@@ -35,9 +35,9 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-white text-[16px] font-medium gap-7 w-full md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-[#01319F] text-[18px] gap-7 w-full md:w-auto`}
         >
-          <Link to="/" className="hover:text-[#14A660] home cursor-pointer"
+          <Link to="/" className="hover:text-[#14A660] link cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
 >
             Home
@@ -49,7 +49,7 @@ export default function Navbar() {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onClick={handleDropdown}
           >
-            <div className="hover:text-[#14A660]">
+            <div className="hover:text-[#14A660] link">
               Visas <i className="fa-solid fa-chevron-down text-sm ml-2"></i>
             </div>
             {isDropdownOpen && (
@@ -57,7 +57,7 @@ export default function Navbar() {
               onClick={()=>setIsOpen(false)}
               onMouseLeave={() => setIsDropdownOpen(false)}
 
-               className="absolute bg-[#01319F] mt-2 w-[200px] text-left rounded shadow-lg">
+               className="absolute bg-[#01319F] text-[#01319F] mt-2 w-[200px] text-left rounded shadow-lg">
                 <li className="hover:bg-[#14A660]">
                   <Link to="/CanadaVisa" className="block px-5 py-2 text-white">
                     Canada Visa
@@ -87,22 +87,22 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/About" className="hover:text-[#14A660] cursor-pointer"
+          <Link to="/About" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
             About Us
           </Link>
-          <Link to="/Testimonial" className="hover:text-[#14A660] cursor-pointer"
+          <Link to="/Testimonial" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
             Happy Clients
           </Link>
-          <Link to="/ContactUs" className="hover:text-[#14A660] cursor-pointer"
+          <Link to="/ContactUs" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
             Contact Us
           </Link>
-          <Link to="/OtherServices" className="hover:text-[#14A660] cursor-pointer"
+          <Link to="/OtherServices" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
             Other Services
@@ -113,7 +113,7 @@ export default function Navbar() {
             <div className="justify-center md:hidden">
               <button
                 onClick={handleCallNow}
-                className="gap-5 border-[1px] text-white border-[solid] border-white py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
+                className="gap-5 border-[1px] text-white link border-[solid] border-white py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
               >
                 Call Now
                 <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
@@ -125,10 +125,10 @@ export default function Navbar() {
         {/* Desktop "Call Now" Button */}
         <button
           onClick={handleCallNow}
-          className="hidden items-center md:inline-flex gap-5 border-[1px] text-white border-[solid] border-white py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
+          className="hidden items-center md:inline-flex link gap-5 border-[2px] text-[#01319F] border-[solid] border-[#01319F] py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
         >
           Call Now
-          <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
+          <i className="fa-solid fa-phone-volume pl-5 text-[#01319F]"></i>
         </button>
       </div>
     </header>
