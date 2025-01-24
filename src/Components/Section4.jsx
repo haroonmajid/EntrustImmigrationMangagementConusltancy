@@ -4,7 +4,7 @@ import '../App.css'
 export default function Section4() {
   return (
     <>
-    <div className='md:flex flex-col grid-cols-2 gap-11 md:flex-row items-center w-[90%] justify-center md:W-[95%] mx-auto md:max-w-screen-xl '>
+    <div className='md:flex flex-col my-10 grid-cols-2 gap-11 md:flex-row items-center w-[90%] justify-center md:W-[95%] mx-auto md:max-w-screen-xl '>
     <div className='banner-1 mb-11'>
         {/* <img className='w-[50vw] h-full bg-cover bg-center' src="./banner1.jpg" alt="" /> */}
     </div>
