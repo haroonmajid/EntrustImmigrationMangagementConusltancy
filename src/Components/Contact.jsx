@@ -163,7 +163,7 @@ const Contact = () => {
         <h1 className="w-[95%] hero1-heading pl-2 md:w-[60%] mx-auto text-[30px] md:text-[42px] leading-snug">
         Welcome To
         <br />
-          <span className='text-white text-[38px] md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
+          <span className='text-white text-[38px] entrust-name md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[36px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> 
         </h1>
         <div className="md:w-[60%] pl-2 w-[95%] mx-auto text-left text-[18px] md:text-[18px] leading-relaxed mt-10">
       At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.

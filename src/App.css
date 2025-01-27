@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Sen", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: normal;
   border: border-box;
 }
 
@@ -43,16 +45,16 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   } */
 
 .navbar .link {
-  font-family:"Baskervville", serif;
+  font-family: "Baskervville", serif;
   font-weight: 900;
   font-style: normal;
 }
 
-.testimonial-section{
-    /* height: 50vh;
+.testimonial-section {
+  /* height: 50vh;
     width: 100%; */
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./Images/happy-clients-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(./Images/happy-clients-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
