@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link to="/" className="hover:text-[#14A660] link cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
 >
-            Home
+            HOME
           </Link>
 
           {/* Dropdown for Visas */}
@@ -50,7 +50,7 @@ export default function Navbar() {
             onClick={handleDropdown}
           >
             <div className="hover:text-[#14A660] link">
-              Visas <i className="fa-solid fa-chevron-down text-sm ml-2"></i>
+              VISAS <i className="fa-solid fa-chevron-down text-sm ml-2"></i>
             </div>
             {isDropdownOpen && (
               <ul
@@ -90,22 +90,22 @@ export default function Navbar() {
           <Link to="/About" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
-            About Us
+            ABOUT US
           </Link>
           <Link to="/Testimonial" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
-            Happy Clients
+            HAPPY CLIENTS
           </Link>
           <Link to="/ContactUs" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
-            Contact Us
+            CONTACT US
           </Link>
           <Link to="/OtherServices" className="hover:text-[#14A660] link cursor-pointer"
                             onClick={()=> setIsOpen(!isOpen)}
 >
-            Other Services
+            OTHER SERVICES
           </Link>
 
           {/* Mobile "Call Now" Button */}
@@ -125,7 +125,7 @@ export default function Navbar() {
         {/* Desktop "Call Now" Button */}
         <button
           onClick={handleCallNow}
-          className="hidden items-center md:inline-flex link gap-5 border-[2px] text-[#01319F] border-[solid] border-[#01319F] py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
+          className="hidden items-center md:inline-flex link gap-5 border-[2px] text-[#01319F] border-[solid] border-[#01319F] md:ml-20 py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
         >
           Call Now
           <i className="fa-solid fa-phone-volume pl-5 text-[#01319F]"></i>

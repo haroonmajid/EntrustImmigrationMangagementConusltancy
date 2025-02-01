@@ -5,10 +5,15 @@ import { Button } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import "./Contact.css"
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 const Contact = () => {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const onChange = () =>{
+
+  }
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -169,7 +174,7 @@ const Contact = () => {
 
   return (
     <div className="pb-[20px]">
-      <div className="text-white h-[110vh] md:h-[100vh] hero1 flex flex-col pt-[25%] md:pt-[10%] font-bold text-left">
+      <div className="text-white h-[110vh] md:h-[90vh] hero1 flex flex-col pt-[25%] md:pt-[10%] font-bold text-left">
         <h1 className="w-[95%] hero1-heading pl-2 md:w-[60%] mx-auto text-[30px] md:text-[42px] leading-snug">
         Welcome To
         <br />
@@ -237,7 +242,7 @@ const Contact = () => {
             value={formData.migrateCountry}
             onChange={handleChange}
             required
-            className={`floating-input w-full px-4 py-0 bg-transparent h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+            className={`floating-input w-full px-4 py-5 bg-transparent h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.migrateCountry ? "has-value" : ""
             }`}
           >
@@ -346,8 +351,11 @@ const Contact = () => {
         </div>
 
         <div className="flex items-center gap-2 mb-6">
-          <input type="checkbox" name="captcha" required />
-          <label>I’m not a robot</label>
+        <ReCAPTCHA
+    sitekey="6Le4BMoqAAAAAOkRzRcmfbWeiyUiGegoxdYj3UQi
+"
+    onChange={onChange}
+  />          <label>I’m not a robot</label>
         </div>
         <div className='text-center'>
 

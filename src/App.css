@@ -45,9 +45,10 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   } */
 
 .navbar .link {
-  font-family: "Baskervville", serif;
-  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
   font-style: normal;
+  font-size: 18px;
 }
 
 .testimonial-section {
