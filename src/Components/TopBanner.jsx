@@ -9,7 +9,7 @@ function TopBanner() {
                     <div>
                         <Link to="" className='hover:text-[#14A660]'>
                             <i class="fa-solid fa-phone-flip pr-2"></i>
-                            <span>+920003131313</span>
+                            <span>+971 55 905 5498</span>
                         </Link>
                     </div>
                     <div>
