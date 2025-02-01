@@ -352,8 +352,7 @@ const Contact = () => {
 
         <div className="flex items-center gap-2 mb-6">
         <ReCAPTCHA
-    sitekey="6Le4BMoqAAAAAOkRzRcmfbWeiyUiGegoxdYj3UQi
-"
+    sitekey="6Le4BMoqAAAAAIBt6QEUKewj_KGnC_XNDMOZl_8H"
     onChange={onChange}
   />          <label>I’m not a robot</label>
         </div>
