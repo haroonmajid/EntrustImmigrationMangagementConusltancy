@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { databases } from '../appwrite';
+import { ID } from "appwrite";
 import { Button } from 'react-bootstrap';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
@@ -13,7 +14,7 @@ const Contact = () => {
     const formData = new FormData(event.target);
     setIsPopupVisible(true);
 
-    formData.append("access_key", "00b0b9bb-4105-4cea-8e5c-a4ee790d5051");
+    formData.append("access_key", "00b0b9bb-4105-4cea-8e5c-a4ee790d5051",);
 
     const object = Object.fromEntries(formData,phone);
     const json = JSON.stringify(object);
@@ -110,7 +111,7 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -131,7 +132,7 @@ const Contact = () => {
       await databases.createDocument(
         '67776f9600374cf28ae9', // Replace with your database ID
         '67776fdb00316ea91681', // Replace with your collection ID
-        'unique()', // Generates a unique document ID
+        ID.unique(), // Unique document ID
         formData
       );
       setSuccess(true);
@@ -155,6 +156,15 @@ const Contact = () => {
   const placeholderStyle = {
     color: 'rgba(0, 0, 0, 0.5)', // Low opacity for placeholder text
   };
+  const fetchData = async () => {
+    try {
+      const response = await databases.listDocuments("your_database_id", "your_collection_id");
+      console.log(response.documents);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  
   
 
   return (
@@ -170,6 +180,7 @@ const Contact = () => {
       </div>
       </div>
       <form   
+        action='./'
         onSubmit={onSubmit}
         className="max-w-5xl mx-auto mt-20 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >

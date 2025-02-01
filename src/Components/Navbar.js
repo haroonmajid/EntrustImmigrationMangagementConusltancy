@@ -60,27 +60,27 @@ export default function Navbar() {
                className="absolute bg-[#01319F] text-[#01319F] mt-2 w-[200px] text-left rounded shadow-lg">
                 <li className="hover:bg-[#14A660] ">
                   <Link to="/CanadaVisa" className="block font-casteller px-5 py-2 text-white">
-                    Canada Visa
+                    Canada
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660]">
                   <Link to="/EuropeanVisa" className="block px-5 py-2 font-casteller text-white">
-                    European Countries Visa
+                    European Countries 
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660]">
                   <Link to="/UnitedKingdomVisa" className="block px-5 py-2 text-white">
-                    United Kingdom Visa
+                    United Kingdom 
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660]">
                   <Link to="/UsaVisa" className="block px-5 py-2 text-white">
-                    USA Visa
+                    USA 
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660]">
                   <Link to="/AustraliaVisa" className="block px-5 py-2 text-white">
-                    Australia Visa
+                    Australia 
                   </Link>
                 </li>
               </ul>
