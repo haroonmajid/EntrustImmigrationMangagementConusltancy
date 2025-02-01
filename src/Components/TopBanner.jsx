@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function TopBanner() {
     return (
         <div className='bg-[#01319F]'>
-            <div className=' text-white flex mx-auto px-4 md:pl-4 justify-between max-w-screen-xl py-2'>
+            <div className=' text-white flex mx-auto px-4 md:px-0 md:pl-4 justify-between max-w-screen-xl py-2'>
                 <div className='flex gap-5'>
                     <div>
                         <Link to="" className='hover:text-[#14A660]'>
