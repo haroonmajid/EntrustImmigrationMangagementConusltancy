@@ -65,7 +65,7 @@ export default function Navbar() {
                 </li>
                 <li className="hover:bg-[#14A660] sub-link">
                   <Link to="/EuropeanVisa" className="block px-5 py-2 font-casteller text-white">
-                    EUROPEAN COUNTRIES
+                    EUROPE
                   </Link>
                 </li>
                 <li className="hover:bg-[#14A660] sub-link">
