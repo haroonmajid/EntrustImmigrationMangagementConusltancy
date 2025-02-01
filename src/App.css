@@ -50,6 +50,18 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   font-style: normal;
   font-size: 18px;
 }
+.navbar .link .sub-link{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+.navbar .sub-link{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
 
 .testimonial-section {
   /* height: 50vh;

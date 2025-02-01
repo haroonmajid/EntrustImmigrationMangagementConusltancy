@@ -203,7 +203,7 @@ const Contact = () => {
             }`}
            
           />
-        <label className="floating-label">Name</label>
+        <label className="floating-label">Name <span className='text-red-700'>*</span></label>
         </div>
 
          <div style={customStyles.container}>
@@ -232,7 +232,7 @@ const Contact = () => {
           }`
             }
           />
-        <label className="floating-label">Email</label>
+        <label className="floating-label">Email<span className='text-red-700'> *</span></label>
         </div>
         </div>
 

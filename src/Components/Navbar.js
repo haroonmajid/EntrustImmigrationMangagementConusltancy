@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-[#01319F] text-[18px] gap-7 w-full md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
         >
           <Link to="/" className="hover:text-[#14A660] link cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
@@ -58,29 +58,29 @@ export default function Navbar() {
               onMouseLeave={() => setIsDropdownOpen(false)}
 
                className="absolute bg-[#01319F] text-[#01319F] mt-2 w-[200px] text-left rounded shadow-lg">
-                <li className="hover:bg-[#14A660] ">
+                <li className="hover:bg-[#14A660] sub-link ">
                   <Link to="/CanadaVisa" className="block font-casteller px-5 py-2 text-white">
-                    Canada
+                    CANADA
                   </Link>
                 </li>
-                <li className="hover:bg-[#14A660]">
+                <li className="hover:bg-[#14A660] sub-link">
                   <Link to="/EuropeanVisa" className="block px-5 py-2 font-casteller text-white">
-                    European Countries 
+                    EUROPEAN COUNTRIES
                   </Link>
                 </li>
-                <li className="hover:bg-[#14A660]">
+                <li className="hover:bg-[#14A660] sub-link">
                   <Link to="/UnitedKingdomVisa" className="block px-5 py-2 text-white">
-                    United Kingdom 
+                    UNITED KINGDOM
                   </Link>
                 </li>
-                <li className="hover:bg-[#14A660]">
+                <li className="hover:bg-[#14A660] sub-link">
                   <Link to="/UsaVisa" className="block px-5 py-2 text-white">
                     USA 
                   </Link>
                 </li>
-                <li className="hover:bg-[#14A660]">
+                <li className="hover:bg-[#14A660] sub-link">
                   <Link to="/AustraliaVisa" className="block px-5 py-2 text-white">
-                    Australia 
+                    AUSTRALIA
                   </Link>
                 </li>
               </ul>

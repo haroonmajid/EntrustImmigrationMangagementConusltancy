@@ -40,6 +40,8 @@
     color: #ccc;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
+    font-family: "Roboto", serif;
+    font-weight: 400;
   }
   
   .floating-input:focus ~ .floating-label,
