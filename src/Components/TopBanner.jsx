@@ -15,7 +15,7 @@ function TopBanner() {
                     <div>
                         <Link to="" className='hover:text-[#14A660]'>
                             <i class="fa-solid fa-envelope pr-2"></i>
-                            <span>abcd@gmail.com</span>
+                            <span>info@eiintl.com</span>
                         </Link>
                     </div>
                 </div>
