@@ -175,7 +175,7 @@ const Contact = () => {
   return (
     <div className="pb-[20px]">
       <div className="text-white h-[110vh] md:h-[90vh] hero1 flex flex-col pt-[15%] md:pt-[10%] font-bold text-left">
-        <h1 className="w-[95%] text-[#01319f] hero1-heading md:w-[70%] mx-auto text-[30px] md:text-[38px] leading-snug">
+        <h1 className="w-[95%] text-[#01319f] hero1-heading md:w-[70%] mx-auto text-[30px] md:text-[52px] leading-snug">
         Welcome To
         <br />
           <h1 className='md:py-10'><span className='text-[38px] entrust-name md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[32px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> </h1>
