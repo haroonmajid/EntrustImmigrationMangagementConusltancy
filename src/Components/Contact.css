@@ -12,6 +12,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    font-family: "Roboto", serif;
+    font-weight: 400;
   }
   
   .floating-input {
@@ -58,4 +60,9 @@
   .entrust-name{
     font-family: "Alegreya", serif;
 
+  }
+
+  .form-input{
+    font-family: "Poppins", serif;
+    font-weight: 300;
   }

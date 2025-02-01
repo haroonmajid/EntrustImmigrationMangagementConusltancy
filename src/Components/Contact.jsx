@@ -187,7 +187,7 @@ const Contact = () => {
       <form   
         action='./'
         onSubmit={onSubmit}
-        className="max-w-5xl mx-auto mt-20 px-6 py-5 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
+        className="max-w-5xl form-input mx-auto mt-20 px-6 py-20 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >
         <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
         <div className='input-wrapper'>
@@ -210,6 +210,7 @@ const Contact = () => {
       <PhoneInput
         country={"us"}
         value={phone}
+        required
         onChange={setPhone}
         inputStyle={customStyles.input}
         buttonStyle={customStyles.dropdown}
@@ -241,7 +242,6 @@ const Contact = () => {
             name="migrateCountry"
             value={formData.migrateCountry}
             onChange={handleChange}
-            required
             className={`floating-input w-full px-4 py-5 bg-transparent h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.migrateCountry ? "has-value" : ""
             }`}
@@ -261,7 +261,6 @@ const Contact = () => {
             name="nationality"
             value={formData.nationality}
             onChange={handleChange}
-            required
             className={`floating-input w-full bg-transparent px-4 py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] ${
               formData.nationality ? "has-value" : ""
             }`}
@@ -281,7 +280,7 @@ const Contact = () => {
               name="dob"
               value={formData.dob}
               onChange={handleChange}
-              required
+             
               className={`floating-input w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f] ${
                 formData.dob ? "has-value" : ""
               }`}
@@ -294,13 +293,13 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className='input-wrapper'>
           <select
             name="education"
             value={formData.education}
             onChange={handleChange}
-            required
+        
             className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.education ? "has-value" : ""
             }`}
@@ -317,7 +316,6 @@ const Contact = () => {
             name="immigrationType"
             value={formData.immigrationType}
             onChange={handleChange}
-            required
             className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.immigrationType ? "has-value" : ""
             }`}
@@ -333,7 +331,6 @@ const Contact = () => {
             name="preferredLocation"
             value={formData.preferredLocation}
             onChange={handleChange}
-            required
             className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
               formData.preferredLocation ? "has-value" : ""
             }`}
@@ -350,19 +347,19 @@ const Contact = () => {
           
         </div>
 
-        <div className="flex items-center gap-2 mb-6">
+        <div className="flex justify-between gap-2 mb-6">
         <ReCAPTCHA
     sitekey="6Le4BMoqAAAAAIBt6QEUKewj_KGnC_XNDMOZl_8H"
     onChange={onChange}
-  />          <label>I’m not a robot</label>
-        </div>
-        <div className='text-center'>
+  />       <div className='text-center flex items-center'>
 
-          <Button type="submit"
-            variant="primary"
-            className="w-[50%] md:w-1/4 py-2 px-4 bg-[#01319f] text-white font-bold rounded-md hover:bg-[#14A660] focus:outline-none focus:ring-2 focus:ring-[#01319f]">Submit
-          </Button>
+  <Button type="submit"
+    variant="primary"
+    className=" bg-[#01319f] py-2 px-28 text-white font-bold rounded-md hover:bg-[#14A660] focus:outline-none focus:ring-2 focus:ring-[#01319f]">Submit
+  </Button>
+</div>
         </div>
+        
       </form>
       <div className="max-w-5xl mx-auto px-6 text-center text-[18px] md:text-[18px] leading-relaxed mt-10">
       At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
