@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
     return (
         <footer class="text-black shadow-2xl">
-            <div class="max-w-screen-xl px-5 pb-24 pt-12 mx-auto flex md:items-center md:justify-between lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center">
+            <div class="max-w-screen-xl pl-5 pb-24 pt-12 mx-auto flex md:items-center md:justify-between lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div class="w-[10%] flex-shrink-0 md:mx-0 mx-auto text-center">
                     <a class="flex title-font font-medium justify-center items-center text-white mb-4 md:mb-0">
                         <Link to='/' className="flex hover:text-[#14A660] title-font font-medium justify-center items-center text-white">
                             <img className="w-[60%] h-[60%]" src="./entrust-logo.png" alt="" />
@@ -32,10 +32,13 @@ export default function Footer() {
                         </a>
                     </span>
                 </div>
-                <div class="md:flex gap-11 -mb-10 md:mt-0 mt-10 text-center justify-between">
-                    <div class="lg:w-1/3 md:w-1/3 w-full ">
-                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">Services</h2>
-                        <nav class="list-none mb-10">
+                <div class="md:flex -mb-10 w-[90%] md:mt-0 mt-10 gap-28 justify-between">
+                    <div class="pl-48 w-[25%] ">
+                    <div className='bg-[#01319f] px-1 py-5 text-center rounded-[100%]'>
+                    <i class="fa-solid fa-location-dot text-white"></i>
+                    </div>
+                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">ABU DHABI</h2>
+                        {/* <nav class="list-none mb-10">
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Canada Immigration</a>
                             </li>
@@ -48,11 +51,11 @@ export default function Footer() {
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">UAE Golden Visa</a>
                             </li>
-                        </nav>
+                        </nav> */}
                     </div>
-                    <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">Our UAE Locations</h2>
-                        <nav class="list-none mb-10">
+                    <div class="w-[25%] px-4">
+                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">SHARJAH</h2>
+                        {/* <nav class="list-none mb-10">
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Immigration Consultant Dubai</a>
                             </li>
@@ -63,11 +66,26 @@ export default function Footer() {
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Immigration Consultant Sharjah</a>
                             </li>
 
-                        </nav>
+                        </nav> */}
                     </div>
                     <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">Our Global Locations</h2>
-                        <nav class="list-none mb-10">
+                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">DUBAI</h2>
+                        {/* <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-black hover:text-[#01319f] cursor-pointer">Immigration Consultant Dubai</a>
+                            </li>
+                            <li>
+                                <a class="text-black hover:text-[#01319f] cursor-pointer">Immigraton Consultant Abu Dhabi</a>
+                            </li>
+                            <li>
+                                <a class="text-black hover:text-[#01319f] cursor-pointer">Immigration Consultant Sharjah</a>
+                            </li>
+
+                        </nav> */}
+                    </div>
+                    <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-medium text-black tracking-widest text-2xl mb-3">INDIA</h2>
+                        {/* <nav class="list-none mb-10">
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Saudia Arabia</a>
                             </li>
@@ -80,14 +98,14 @@ export default function Footer() {
                             <li>
                                 <a class="text-black hover:text-[#01319f] cursor-pointer">Oman</a>
                             </li>
-                        </nav>
+                        </nav> */}
                     </div>
                 </div>
             </div>
             <div class="bg-[#01319f]">
                 <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
-                    <p class="text-white text-lg text-center sm:text-left">
-                        Entrust Consultant © 2024 All Right Reserved
+                    <p class="text-white text-[16px] text-center sm:text-left">
+                    @ Copyright Entrust Immigration Management Consultancy 2025. All Rights Reserved
                     </p>
                 </div>
             </div>

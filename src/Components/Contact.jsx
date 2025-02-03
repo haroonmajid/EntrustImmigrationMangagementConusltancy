@@ -181,7 +181,7 @@ const Contact = () => {
           <h1 className='md:py-10'><span className='text-[38px] entrust-name md:text-[48px]'>  Entrust Immigration Management Consultancy  </span><br /><span className='text-[30px] md:text-[32px]'> Your Trusted Partner For Global Mobility & Immigration Services. </span> </h1>
         </h1>
         <div className="md:w-[70%] w-[95%] mx-auto text-left text-[18px] md:text-[18px] leading-relaxed text-[#01319f]">
-      At <span className='text-[#14A660] font-bold text-[2px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & <br /> businesses to realize their global aspirations with confidence & ease.
+      At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & <br /> businesses to realize their global aspirations with confidence & ease.
       </div>
       </div>
       <form   
@@ -361,9 +361,9 @@ const Contact = () => {
         </div>
         
       </form>
-      <div className="max-w-5xl mx-auto px-6 text-center text-[18px] md:text-[18px] leading-relaxed mt-10">
+      {/* <div className="max-w-5xl mx-auto px-6 text-center text-[18px] md:text-[18px] leading-relaxed mt-10">
       At <span className='text-[#14A660] font-bold text-[22px]'> Entrust</span>, we simplify the complexities of immigration, empowering individuals & businesses to realize their global aspirations with confidence & ease.
-      </div>
+      </div> */}
       {isPopupVisible && (
         <div
           style={{

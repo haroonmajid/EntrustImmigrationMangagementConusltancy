@@ -71,3 +71,11 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   background-size: cover;
   background-position: center;
 }
+
+.austrialia-banner{
+  background-image: url(./Images/Australia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
