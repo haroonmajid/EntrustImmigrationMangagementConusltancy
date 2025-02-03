@@ -31,29 +31,37 @@ export default function Footer() {
                             </svg>
                         </a>
                     </span>
+                       
                 </div>
                 <div class="md:flex md:items-center md:w-[75%] pr-0 -mb-10 md:mt-0 mt-10 text-center justify-evenly">
-                    <div class=" w-full flex md:items-center justify-center md:justify-end">
-                        <h2 class="title-font font-medium  text-center  md:justify-end text-black tracking-widest text-2xl mb-3">ABU DHABI</h2>
+                    <div class=" w-full py-8">
+                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
+                        <h2 class="title-font flex  justify-center font-medium  text-center text-black tracking-widest text-2xl mb-3">ABU DHABI</h2>
                         
                     </div>
-                    <div class="w-full ">
-                        <h2 class="title-font font-medium flex md:justify-end justify-center text-black tracking-widest text-2xl mb-3">DUBAI</h2>
+                    <div class="w-full py-8">
+                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
+
+                        <h2 class="title-font font-medium flex justify-center text-black tracking-widest text-2xl mb-3">DUBAI</h2>
                         
                     </div>
-                    <div class="w-full">
-                        <h2 class="title-font font-medium flex justify-center md:justify-end text-black tracking-widest text-2xl mb-3">SHARJAH</h2>
+                    <div class="w-full py-8">
+                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
+
+                        <h2 class="title-font font-medium flex justify-center text-black tracking-widest text-2xl mb-3">SHARJAH</h2>
                  
                     </div>
                     
-                    <div class="w-full">
-                        <h2 class="title-font font-medium text-black flex md:justify-end justify-center tracking-widest text-2xl mb-3">INDIA</h2>
-                       
+                    <div class="w-full py-8">
+                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
+
+                        <h2 class="title-font font-medium text-black flex md:justify-center justify-center tracking-widest text-2xl mb-3">INDIA</h2>
                     </div>
                 </div>
+                
             </div>
-            <div class="bg-[#01319f]">
-                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
+            <div class="bg-[#01319f] py-2">
+                <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
                     <p class="text-white text-[16px] text-center sm:text-left">
                     @ Copyright Entrust Immigration Consultancy 2025. All Rights Reserved                    </p>
                 </div>
