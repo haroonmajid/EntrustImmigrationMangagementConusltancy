@@ -86,3 +86,11 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   background-size: cover;
   height: 60vh;
 }
+
+.uk-banner{
+  background-image: url(./Images/canadian-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
