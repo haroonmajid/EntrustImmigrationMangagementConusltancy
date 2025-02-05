@@ -88,9 +88,31 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
 }
 
 .uk-banner{
-  background-image: url(./Images/canadian-banner.jpg);
+  background-image: url(./Images/uk.jpeg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
 }
+.europe-banner{
+  background-image: url(./Images/europe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.usa-banner{
+  background-image: url(./Images/uk.jpeg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* .contact-page{
+  background-image: url(./Images/Contact\ us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+} */
