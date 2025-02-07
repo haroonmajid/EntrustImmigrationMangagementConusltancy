@@ -347,7 +347,7 @@ const Contact = () => {
           
         </div>
 
-        <div className="flex justify-between gap-2 mb-6">
+        <div className="md:flex justify-between gap-2 mb-6">
         <ReCAPTCHA
     sitekey="6Le4BMoqAAAAAIBt6QEUKewj_KGnC_XNDMOZl_8H"
     onChange={onChange}
