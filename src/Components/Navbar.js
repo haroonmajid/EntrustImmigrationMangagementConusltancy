@@ -10,7 +10,7 @@ export default function Navbar() {
 
   }
   const handleCallNow = () => {
-    window.location.href = "tel:+971 55 905 5498";
+    window.location.href = "tel:+971 50 931 3649";
   };
 
   return (
@@ -127,7 +127,7 @@ export default function Navbar() {
           onClick={handleCallNow}
           className="hidden items-center md:inline-flex link gap-5 border-[2px] text-[#01319F] border-[solid] border-[#01319F] md:ml-20 py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
         >
-          Call Now
+          Connect Now
           <i className="fa-solid fa-phone-volume pl-5 text-[#01319F]"></i>
         </button>
       </div>
