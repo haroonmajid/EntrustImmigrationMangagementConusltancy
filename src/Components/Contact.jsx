@@ -355,7 +355,7 @@ const Contact = () => {
 
   <Button type="submit"
     variant="primary"
-    className=" bg-[#01319f] py-2 px-28 text-white font-bold rounded-md hover:bg-[#14A660] focus:outline-none focus:ring-2 focus:ring-[#01319f]">Submit
+    className=" bg-[#01319f] mt-10 md:mt-0 py-2 px-28 text-white font-bold rounded-md hover:bg-[#14A660] focus:outline-none focus:ring-2 focus:ring-[#01319f]">Submit
   </Button>
 </div>
         </div>
