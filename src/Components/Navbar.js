@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex navbar flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
+          className={`${isOpen ? "flex" : "hidden"} md:flex navbar pl-4 pt-10 flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
         >
           <Link to="/" className="hover:text-[#14A660] link cursor-pointer"
                   onClick={()=> setIsOpen(!isOpen)}
