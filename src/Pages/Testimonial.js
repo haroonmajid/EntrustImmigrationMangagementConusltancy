@@ -4,7 +4,7 @@ import Testimonials from '../Components/Testimonials'
 export default function Testimonial() {
   return (
     <>
-       <Testimonials/>
+       <Testimonials />
     </>
-  )
+  ) 
 }
