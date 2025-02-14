@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header className="shadow-2xl sticky top-0 z-10 bg-white">
-      <div className="container mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
+      <div className="max-w-screen-xl mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
         {/* Logo and Hamburger Icon */}
         <div className="flex items-center pl-3 justify-between w-full md:w-auto">
           {/* Logo */}
