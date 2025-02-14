@@ -13,12 +13,17 @@ import UnitedKingdomVisa from './Pages/UnitedKingdomVisa';
 import UsaVisa from './Pages/UsaVisa';
 import AustraliaVisa from './Pages/AustraliaVisa';
 import TopBanner from './Components/TopBanner';
+import ScrollToTop from './Components/ScrollToTop';
+// import { HashLink as Link } from 'react-router-hash-link';
+
 
 function App() {
   console.log(process.env.REACT_APP_APPWRITE_URL);
 
   return (
+    
     <BrowserRouter>
+    <ScrollToTop />
       <TopBanner></TopBanner>
       <Navbar></Navbar>
       <Routes>

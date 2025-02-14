@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../App.css"
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +13,9 @@ export default function Navbar() {
   const handleCallNow = () => {
     window.location.href = "tel:+971 50 931 3649";
   };
+  // const handleClick = () => {
+  //   window.scrollTo(0, 0); // Scrolls to the top of the page
+  // };
 
   return (
     <header className="shadow-2xl sticky top-0 z-10 bg-white">
@@ -34,11 +38,11 @@ export default function Navbar() {
 
         {/* Navbar Links */}
         <nav
-        onMouseLeave={()=> setIsOpen(!isOpen)}
-          className={`${isOpen ? "flex" : "hidden"} md:flex navbar pl-4 pt-10 flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
+        onMouseLeave={()=> setIsOpen(false)}
+        onClick={()=> setIsOpen(false)}
+          className={`${isOpen ? "flex" : "hidden"} md:flex navbar pl-4 pt-10 md:pl-0 md:pt-0 flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
         >
-          <Link to="/" className="hover:text-[#14A660] link cursor-pointer"
-                  onClick={()=> setIsOpen(!isOpen)}
+          <Link to="/#"  className="hover:text-[#14A660] link cursor-pointer"
 >
             HOME
           </Link>
@@ -88,22 +92,22 @@ export default function Navbar() {
           </div>
 
           <Link to="/About" className="hover:text-[#14A660] link cursor-pointer"
-                            onClick={()=> setIsOpen(!isOpen)}
+                            // onClick={()=> setIsOpen(!isOpen)}
 >
             ABOUT US
           </Link>
           <Link to="/Testimonial" className="hover:text-[#14A660] link cursor-pointer"
-                            onClick={()=> setIsOpen(!isOpen)}
+                            // onClick={()=> setIsOpen(!isOpen)}
 >
             HAPPY CLIENTS
           </Link>
           <Link to="/ContactUs" className="hover:text-[#14A660] link cursor-pointer"
-                            onClick={()=> setIsOpen(!isOpen)}
+                            // onClick={()=> setIsOpen(!isOpen)}
 >
             CONTACT US
           </Link>
           <Link to="/OtherServices" className="hover:text-[#14A660] link cursor-pointer"
-                            onClick={()=> setIsOpen(!isOpen)}
+                            // onClick={()=> setIsOpen(!isOpen)}
 >
             OTHER SERVICES
           </Link>
