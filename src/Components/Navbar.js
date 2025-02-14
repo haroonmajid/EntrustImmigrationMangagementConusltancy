@@ -39,10 +39,10 @@ export default function Navbar() {
         {/* Navbar Links */}
         <nav
         onMouseLeave={()=> setIsOpen(false)}
-        onClick={()=> setIsOpen(false)}
           className={`${isOpen ? "flex" : "hidden"} md:flex navbar pl-4 pt-10 md:pl-0 md:pt-0 flex-col md:flex-row items-center text-[#01319F] text-[16px] gap-7 w-full md:w-auto`}
         >
-          <Link to="/#"  className="hover:text-[#14A660] link cursor-pointer"
+          <Link to="/#"         onClick={()=> setIsOpen(false)}
+            className="hover:text-[#14A660] link cursor-pointer"
 >
             HOME
           </Link>
@@ -92,22 +92,26 @@ export default function Navbar() {
           </div>
 
           <Link to="/About" className="hover:text-[#14A660] link cursor-pointer"
-                            // onClick={()=> setIsOpen(!isOpen)}
+                                    onClick={()=> setIsOpen(false)}
+
 >
             ABOUT US
           </Link>
           <Link to="/Testimonial" className="hover:text-[#14A660] link cursor-pointer"
-                            // onClick={()=> setIsOpen(!isOpen)}
+                                    onClick={()=> setIsOpen(false)}
+
 >
             HAPPY CLIENTS
           </Link>
           <Link to="/ContactUs" className="hover:text-[#14A660] link cursor-pointer"
-                            // onClick={()=> setIsOpen(!isOpen)}
+                                   onClick={()=> setIsOpen(false)}
+
 >
             CONTACT US
           </Link>
           <Link to="/OtherServices" className="hover:text-[#14A660] link cursor-pointer"
-                            // onClick={()=> setIsOpen(!isOpen)}
+                                    onClick={()=> setIsOpen(false)}
+
 >
             OTHER SERVICES
           </Link>
