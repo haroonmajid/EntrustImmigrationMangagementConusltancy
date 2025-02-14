@@ -14,10 +14,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="NavbarHeader shadow-2xl sticky top-0 z-10 bg-white">
-      <div className="container md:max-w-screen-xl mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
+    <header className="shadow-2xl sticky top-0 z-10 bg-white">
+      <div className="container mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
         {/* Logo and Hamburger Icon */}
-        <div v className="flex items-center pl-3 justify-between w-full md:w-auto">
+        <div className="flex items-center pl-3 justify-between w-full md:w-auto">
           {/* Logo */}
           <Link to="/" className="flex hover:text-[#14A660] title-font font-medium items-center text-white">
             <img className="w-[50%] h-[50%]" src="./entrust-logo.png" alt="Entrust Logo" />
@@ -25,7 +25,7 @@ export default function Navbar() {
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden hover:text-[#14A660] pr-2 text-[#01319F] text-3xl"
+            className="block md:hidden hover:text-[#14A660] pr-2 text-[#01319F] text-3xl"
             onClick={() => setIsOpen(!isOpen)}
           >
             <i className={`fa-solid ${isOpen ? "fa-times" : "fa-bars"}`}></i>
