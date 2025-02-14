@@ -33,7 +33,7 @@ function UnitedKingdomVisa() {
                         </div>
                         <div class="p-4 md:w-full block md:hidden">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./india_young_visa.jpeg" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./uk-india-young-professional-visa.jpg" alt="blog" />
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">INDIA YOUNG PROFESSIONALS VISA</h1>
                                     <p class="leading-relaxed mb-3 text-[20px] text-justify">
@@ -68,14 +68,14 @@ function UnitedKingdomVisa() {
                                         </Link>
                                     </div>
                                 </div>
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./india_young_visa.jpeg" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./uk-india-young-professional-visa.jpg" alt="blog" />
 
                             </div>
                         </div>
 
                         <div class="p-4 md:w-full">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./global_talent_visa.jpeg" alt="blog" />
+                                <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./uk-global-talent-visa.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">GLOBAL TALENT VISA</h1>
                                     <p class="leading-relaxed mb-3 text-[20px] text-justify">

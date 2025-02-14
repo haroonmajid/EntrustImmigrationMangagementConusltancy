@@ -13,7 +13,7 @@ function EuropeanVisa() {
                     <div class="flex justify-center flex-wrap -m-4">
                         <div class="p-4 md:w-full">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./eu work visa.png" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./europian-work-permit.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">WORK PERMIT</h1>
                                     <p class="leading-relaxed mb-3 text-[20px] text-justify">

@@ -5,7 +5,7 @@ function UsaVisa() {
     return (
         <>
 
-            <div className='text-center flex items-end pb-5 pl-5 austrialia-banner pt-5'> <span className="text-[56px] pt-11 text-white  font-bold leading-none">
+            <div className='text-center flex items-end pb-5 pl-5 usa-banner pt-5'> <span className="text-[56px] pt-11 text-white  font-bold leading-none">
                 USA
             </span>
             </div>
@@ -14,7 +14,7 @@ function UsaVisa() {
                     <div class="flex justify-center flex-wrap -m-4">
                         <div class="p-4 md:w-full">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./f1_visa_usa.jpg" alt="blog" />
+                                <img class="h-[450px] md:h-[400px] w-full md:w-[50%] object-contain  object-center" src="./usa-f1-visa.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">STUDENT VISA (F-1)</h1>
                                     <p class="leading-relaxed mb-3 text-[20px] text-justify">
@@ -48,13 +48,13 @@ function UsaVisa() {
                                         </Link>
                                     </div>
                                 </div>
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./visit_visa_b2_usa.jpeg" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./h1-b visa.png" alt="blog" />
 
                             </div>
                         </div>
                         <div class="p-4 block md:hidden md:w-full">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./visit_visa_b2_usa.jpeg" alt="blog" />
+                                <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./h1-b visa.png" alt="blog" />
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">VISIT VISA (B-2)</h1>
                                     <p class="leading-relaxed mb-3 text-[20px] text-justify">
