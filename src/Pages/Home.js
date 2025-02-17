@@ -15,7 +15,7 @@ export default function Home() {
     <Hero></Hero>
     <Section1></Section1>
     <Section2></Section2>
-    <Section3></Section3>
+    {/* <Section3></Section3> */}
     <Testimonials/>
     <Section4/>
     </>

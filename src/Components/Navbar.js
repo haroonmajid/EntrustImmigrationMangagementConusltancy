@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <header className="shadow-2xl sticky top-0 z-10 bg-white">
-      <div className="max-w-screen-xl mx-auto flex flex-wrap py-5 items-center justify-center md:justify-around">
+      <div className="max-w-screen-xl mx-auto flex flex-wrap py-3 items-center justify-center md:justify-around">
         {/* Logo and Hamburger Icon */}
         <div className="flex items-center pl-3 justify-between w-full md:w-auto">
           {/* Logo */}
@@ -132,9 +132,9 @@ export default function Navbar() {
         {/* Desktop "Call Now" Button */}
         <button
           onClick={handleCallNow}
-          className="hidden items-center md:inline-flex link gap-5 border-[2px] bg-[#01319F] text-white border-[solid] md:ml-20 py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded text-[20px]"
+          className="hidden items-center md:inline-flex link gap-5 border-[2px] bg-[#01319F] text-white border-[solid] md:ml-20 py-2 px-5 focus:outline-none hover:bg-[#14A660] rounded-lg text-[18px]"
         >
-          Connect Now
+          FREE CONSULT
           <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
         </button>
       </div>
