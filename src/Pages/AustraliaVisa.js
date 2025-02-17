@@ -20,7 +20,7 @@ function AustraliaVisa() {
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">SKILLED WORK REGIONAL <br />(Subclass 491)</h1>
                                     <p class="leading-relaxed mb-3 text-[18px] text-justify">
-                                        The Skilled Work Regional Subclass 491 Visa allows skilled professionals to live, work, and study in regional Australia for up to 5 years, with the option to apply for permanent residency. It is available to candidates nominated by an Australian state or territory, based on a points system. The visa permits family members to join and allows multiple entries to Australia within its validity. Eligible occupations must be listed under the Australian Skilled Migration Program. The visa has two streams: the Main Applicant Stream and the Subsequent Entrant Stream.
+                                        The Skilled Work Regional Subclass 491 Visa allows skilled professionals to live, work, and study in regional Australia for up to 5 years, with the option to apply for permanent residency. The visa permits family members to join and allows multiple entries to Australia within its validity. Eligible occupations must be listed under the Australian Skilled Migration Program. The visa has two streams: the Main Applicant Stream and the Subsequent Entrant Stream.
 
                                     </p>
                                     <div class="flex items-center flex-wrap ">
