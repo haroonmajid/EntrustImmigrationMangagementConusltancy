@@ -168,3 +168,32 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
       max-width: 1536px;
   }
 }
+
+.about-page{
+  background-image: url(./Images/About\ US.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.contact-page{
+  background-image: url(./Images/Contact\ us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.otherservices-page{
+  background-image: url(./Images/other\ services.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+.testimonial-page{
+  background-image: url(./Images/Ratings.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}

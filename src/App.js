@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import ContactUs from './Pages/ContactUs';
 import './App.css';
-import Visas from './Pages/Visas';
+import Visas from './Pages/OtherServices';
 import Testimonial from './Pages/Testimonial';
 import CanadaVisa from './Pages/CanadaVisa';
 import EuropeanVisa from './Pages/EuropeanVisa';
@@ -14,6 +14,7 @@ import UsaVisa from './Pages/UsaVisa';
 import AustraliaVisa from './Pages/AustraliaVisa';
 import TopBanner from './Components/TopBanner';
 import ScrollToTop from './Components/ScrollToTop';
+import OtherServices from './Pages/OtherServices';
 // import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -37,6 +38,8 @@ function App() {
         <Route path='/About' element={<About />} />
         <Route path='/Testimonial' element={<Testimonial />} />
         <Route path='/ContactUs' element={<ContactUs />} />
+        <Route path='/OtherServices' element={<OtherServices />} />
+
 
       </Routes>
       <Footer></Footer>

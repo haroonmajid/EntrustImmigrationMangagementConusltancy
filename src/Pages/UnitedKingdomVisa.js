@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import WhatsAppButton from '../Components/WhatsAppButton'
 
 function UnitedKingdomVisa() {
     return (
         <>
+            <WhatsAppButton/>
 
-            <div className='text-center flex items-end pb-5 pl-5 uk-banner pt-5'> <span className="text-[56px] pt-11 text-white  font-bold leading-none">
+
+            <div className='text-center flex items-end pb-5 pl-5 uk-banner pt-5'> <span className="text-[56px] pt-11 text-white w-full  font-bold leading-none">
                 UNITED KINGDOM
             </span>
             </div>

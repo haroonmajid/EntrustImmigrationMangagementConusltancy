@@ -31,9 +31,9 @@ export default function Section3() {
 
   return (
     <section className="py-10 text-center max-w-screen-xl px-6 mx-auto">
-      <h2 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[48px] mb-8">
+      {/* <h2 className="text-[#01319f] font-bold leading-none text-[38px] md:text-[48px] mb-8">
           <span className="text-[#14A660]">OUR</span> SERVICES
-        </h2>
+        </h2> */}
       <div className="grid justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 py-8">
         {services.map((service, index) => (
           <div
