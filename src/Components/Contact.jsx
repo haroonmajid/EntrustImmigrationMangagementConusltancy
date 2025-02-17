@@ -45,8 +45,8 @@ const Contact = () => {
       dob: '',
       ageRange: '',
       education: '',
-      immigrationType: '',
-      preferredLocation: '',
+      visaType: '',
+      preferredCountry: '',
     });
     setPhone('');
   };
@@ -110,9 +110,17 @@ const Contact = () => {
     dob: '',
     ageRange: '',
     education: '',
-    immigrationType: '',
-    preferredLocation: '',
+    visaType: '',
+    preferredCountry: '',
   });
+  const [visaTypes, setVisaTypes] = useState([]);
+  const countryVisaMap = {
+    Canada: ["Permanent Residence","Investor Visa","Student Visa", "Visit Visa"  ],
+    Europe: ["Work Permit", "Schengen Visa", , "Student Visa"],
+    UnitedKingdom: ["Youth Mobility Visa", "India Young Professional Visa", "Global Talent Visa", "Seasonal Work Visa", "Student Visa"],
+    UnitedStates: ["Student Visa(F-1)", "Visit Visa(B-2)"],
+    Australia: ["Skilled Work Regional(Subclass 491)", "Skilled Independent Visa(Subclass 189)", "SKILLED NOMINATED VISA(Subclass 190)"],
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -121,8 +129,12 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
+    if (name === "preferredCountry") {
+      setVisaTypes(countryVisaMap[value] || []);
+      setFormData((prev) => ({ ...prev, visaType: '' }));
   };
 
+};
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
@@ -150,8 +162,8 @@ const Contact = () => {
         dob: '',
         ageRange: '',
         education: '',
-        immigrationType: '',
-        preferredLocation: '',
+        visaType: '',
+        preferredCountry: '',
       });
       setPhone('');
     } catch (err) {
@@ -169,6 +181,7 @@ const Contact = () => {
       console.error("Error fetching data:", error);
     }
   };
+
   
   
 
@@ -226,8 +239,8 @@ const Contact = () => {
         </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <div className='input-wrapper'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          {/* <div className='input-wrapper'>
           <select
             name="migrateCountry"
             value={formData.migrateCountry}
@@ -244,8 +257,24 @@ const Contact = () => {
             <option value="UnitedStates">United States Of America</option>
           </select>
           <label className="floating-label">Migrate Country</label>
+          </div> */}
+          <div className="input-wrapper">
+            <input
+              type="date"
+              name="dob"
+              value={formData.dob}
+              onChange={handleChange}
+             
+              className={`floating-input w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f] ${
+                formData.dob ? "has-value" : ""
+              }`}
+            />
+            {!formData.dob && (
+              <label className="floating-label md:hidden absolute left-3 top-2 text-gray-400">
+                Date Of Birth
+                              </label>
+            )}
           </div>
-
           <div className='input-wrapper'>
           <select
             name="nationality"
@@ -264,26 +293,64 @@ const Contact = () => {
           </select>
           <label className="floating-label">Nationality</label>
           </div>
-          <div className="input-wrapper">
-            <input
-              type="date"
-              name="dob"
-              value={formData.dob}
-              onChange={handleChange}
-             
-              className={`floating-input w-full px-4 py-0 h-10 border bg-transparent border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319f] ${
-                formData.dob ? "has-value" : ""
-              }`}
-            />
-            {!formData.dob && (
-              <label className="floating-label md:hidden absolute left-3 top-2 text-gray-400">
-                Date Of Birth
-                              </label>
-            )}
-          </div>
+         
+
+         
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* <div className='input-wrapper'>
+          <select
+            name="visaType"
+            value={formData.visaType}
+            onChange={handleChange}
+            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.visaType ? "has-value" : ""
+            }`}
+          >
+            <option value=""selected disabled></option>
+            <option value="Canada">Study</option>
+            <option value="Europe">Work</option>
+            </select>
+          <label className="floating-label">Visa Type</label>
+          </div> */}
+           <div className='input-wrapper'>
+          <select
+            name="preferredCountry"
+            value={formData.preferredCountry}
+            onChange={handleChange}
+            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
+              formData.preferredCountry ? "has-value" : ""
+            }`}
+          >
+            <option value=""selected disabled></option>
+            <option value="Canada">Canada</option>
+            <option value="Europe">Europe</option>
+            <option value="UnitedKingdom">United Kingdom</option>
+            <option value="UnitedStates">United States Of America</option>
+            <option value="Australia">Australia</option>
+            </select>
+          <label className="floating-label">Preferrd Country</label>
+          </div>
+           <div className="input-wrapper">
+            <select
+              name="visaType"
+              value={formData.visaType}
+              onChange={handleChange}
+              className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] ${
+                formData.visaType ? "has-value" : ""
+              }`}
+            >
+              <option value="" selected disabled></option>
+              {visaTypes.map((visa, index) => (
+                <option key={index} value={visa}>
+                  {visa}
+                </option>
+              ))}
+            </select>
+            <label className="floating-label">Visa Type</label>
+          </div>
         <div className='input-wrapper'>
           <select
             name="education"
@@ -301,36 +368,8 @@ const Contact = () => {
             </select>
           <label className="floating-label">Education</label>
           </div>
-          <div className='input-wrapper'>
-          <select
-            name="immigrationType"
-            value={formData.immigrationType}
-            onChange={handleChange}
-            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
-              formData.immigrationType ? "has-value" : ""
-            }`}
-          >
-            <option value=""selected disabled></option>
-            <option value="Canada">Study</option>
-            <option value="Europe">Work</option>
-            </select>
-          <label className="floating-label">Immigration Type</label>
-          </div>
-          <div className='input-wrapper'>
-          <select
-            name="preferredLocation"
-            value={formData.preferredLocation}
-            onChange={handleChange}
-            className={`floating-input w-full px-4 bg-transparent py-0 h-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#01319F] text-rgba(0, 0, 0, 0.5) ${
-              formData.preferredLocation ? "has-value" : ""
-            }`}
-          >
-            <option value=""selected disabled></option>
-            <option value="Canada">City A</option>
-            <option value="Europe">City B</option>
-            </select>
-          <label className="floating-label">Preferrd Location</label>
-          </div>
+          
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -390,5 +429,6 @@ const Contact = () => {
     </div>
   );
 };
+
 
 export default Contact;
