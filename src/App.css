@@ -21,6 +21,16 @@
     align-items: flex-start;
   }
 }
+@keyframes flashColors {
+  0% { background-color: #01319F; }
+  50% { background-color: #14A660; }
+  100% { background-color: #01319F; }
+}
+
+.flashing-button {
+  animation: flashColors 1s ease-in-out infinite;
+}
+
 
 .banner-1 {
   background-image: url(../public/banner1.jpg);
