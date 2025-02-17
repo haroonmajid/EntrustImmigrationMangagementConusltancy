@@ -19,7 +19,7 @@ function UsaVisa() {
                                 <img class="h-[450px] md:h-[400px] w-full md:w-[50%]  object-center" src="./f1_visa_usa.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">STUDENT VISA (F-1)</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         The US Student Visa, specifically the F-1 Visa, allows international students to study full-time at an accredited educational institution in the United States. To qualify, applicants must have an acceptance letter from a U.S. school, demonstrate sufficient funds to cover tuition and living expenses, and prove their intent to return to their home country after completing their studies. The visa also permits students to work part-time on campus during the academic year and full-time during breaks.
 
                                     </p>
@@ -38,7 +38,7 @@ function UsaVisa() {
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">VISIT VISA (B-2)</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         The USA Visit Visa, also known as the B-2 Tourist Visa, allows individuals to travel to the United States for tourism, leisure, or to visit family and friends. It is typically granted for a period of up to six months. Applicants must demonstrate their intent to return to their home country after their visit and show proof of sufficient funds to cover travel and living expenses during their stay. This visa does not permit employment or long-term stays in the U.S.
                                     </p>
                                     <div class="flex items-center flex-wrap ">
@@ -59,7 +59,7 @@ function UsaVisa() {
                                 <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./h1-b visa.png" alt="blog" />
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">VISIT VISA (B-2)</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         The USA Visit Visa, also known as the B-2 Tourist Visa, allows individuals to travel to the United States for tourism, leisure, or to visit family and friends. It is typically granted for a period of up to six months. Applicants must demonstrate their intent to return to their home country after their visit and show proof of sufficient funds to cover travel and living expenses during their stay. This visa does not permit employment or long-term stays in the U.S.
                                     </p>
                                     <div class="flex items-center flex-wrap ">

@@ -20,7 +20,7 @@ function EuropeanVisa() {
                                 <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./europian-work-permit.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">WORK PERMIT</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         Work visas in the EU region are designed to allow skilled professionals, laborers, and entrepreneurs from outside the European Union to live and work in EU member countries. Requirements vary by country, but typically include securing a job offer, meeting qualification criteria, and sometimes obtaining employer sponsorship. The EU offers different visa types, including those for skilled workers, seasonal labor, and employees in shortage occupations. Many EU nations also provide pathways to permanent residency after a certain number of years. These work visas help fill labor gaps and attract talent to boost the EU’s economy and innovation.
                                     </p>
                                     <div class="flex items-center flex-wrap ">
@@ -39,7 +39,7 @@ function EuropeanVisa() {
                                 <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./schengen_visa_european_countries.jpeg" alt="blog" />
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">SCHENGEN VISA</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         The Schengen Visa allows non-EU nationals to travel freely within the Schengen Area, which includes 27 European countries. It permits short stays of up to 90 days within a 180-day period for tourism, business, or family visits. With a single visa, travelers can visit multiple Schengen countries without the need for additional border checks. To obtain a Schengen visa, applicants must meet specific requirements, such as proof of travel insurance, sufficient funds, and a valid reason for their visit. The visa simplifies travel across Europe, making it easier for individuals to explore the Schengen zone.
                                     </p>
                                     <div class="flex items-center flex-wrap ">
@@ -58,7 +58,7 @@ function EuropeanVisa() {
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">SCHENGEN VISA</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         The Schengen Visa allows non-EU nationals to travel freely within the Schengen Area, which includes 27 European countries. It permits short stays of up to 90 days within a 180-day period for tourism, business, or family visits. With a single visa, travelers can visit multiple Schengen countries without the need for additional border checks. To obtain a Schengen visa, applicants must meet specific requirements, such as proof of travel insurance, sufficient funds, and a valid reason for their visit. The visa simplifies travel across Europe, making it easier for individuals to explore the Schengen zone.
                                     </p>
                                     <div class="flex items-center flex-wrap ">
@@ -80,7 +80,7 @@ function EuropeanVisa() {
                                 <img class="h-[400px] w-full md:w-[50%] object-fill  object-center" src="./student_visa_european_countries.jpg" alt="blog" />
                                 <div class="p-6 md:pl-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">STUDENT VISA</h1>
-                                    <p class="leading-relaxed mb-3 text-[20px] text-justify">
+                                    <p class="leading-relaxed mb-3 text-[18px] text-justify">
                                         An EU Student Visa allows non-EU nationals to study at recognized educational institutions within the European Union. The visa grants students the right to live and study in an EU country for the duration of their academic program. Requirements typically include proof of acceptance at a university, sufficient funds to cover tuition fees and living expenses, and health insurance. While each EU country has its own specific criteria, the student visa generally allows part-time work during studies and provides a pathway to extend the stay for further education or employment opportunities after graduation.
 
                                     </p>
