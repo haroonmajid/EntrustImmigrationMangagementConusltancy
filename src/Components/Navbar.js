@@ -116,10 +116,10 @@ export default function Navbar() {
         <button
           onClick={handleCallNow}
           id="flash-button"
-          className={`hidden md:inline-flex items-center link gap-5 border-[2px] text-white border-[solid] md:ml-20 py-2 px-5 focus:outline-none rounded-lg text-[18px] 
+          className={`hidden md:inline-flex items-center link gap-5 border-[2px] text-white border-[solid] md:ml-20 py-2 px-5 hover:bg-[#14A660] focus:outline-none rounded-lg text-[18px] 
           ${isFlashing ? "flashing-button" : "bg-[#01319F]"}`}
         >
-          FREE CONSULT
+          Book a Free Consultation
           <i className="fa-solid fa-phone-volume pl-5 text-white"></i>
         </button>
       </div>

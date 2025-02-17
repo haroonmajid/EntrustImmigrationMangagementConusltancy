@@ -5,7 +5,7 @@ function CanadaVisa() {
     return (
         <>
 
-            <div className='text-center flex items-end pb-5 pl-5 canada-banner pt-5'> <span className="text-[56px] pt-11 text-white  font-bold leading-none">
+            <div className='text-left flex items-end pb-5 pl-5 canada-banner pt-5'> <span className="text-[56px] container mx-auto pt-11 text-white  font-bold leading-none">
                 CANADA
             </span>
             </div>
