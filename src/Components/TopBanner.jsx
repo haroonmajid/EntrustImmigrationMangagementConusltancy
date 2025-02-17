@@ -6,13 +6,13 @@ function TopBanner() {
         <div className='bg-[#01319F]'>
             <div className='text-white flex mx-auto px-4 md:px-5 md:pl-4 justify-between py-1'>
                 <div className='flex gap-3 md:gap-5 text-sm'>
-                    <div className='flex text-[10px] md:text-[16px]'>
+                    <div className='flex text-[12px] md:text-[16px]'>
                         <Link to="" className='hover:text-[#14A660]'>
                             <i class="fa-solid fa-phone-flip pr-2"></i>
                             <span>+971 55 905 5498</span>
                         </Link>
                     </div>
-                    <div className='flex text-[10px] md:text-[16px]'>
+                    <div className='flex text-[12px] md:text-[16px]'>
                         <Link to="" className='hover:text-[#14A660]'>
                             <i class="fa-solid fa-envelope pr-2"></i>
                             <span>info@eiintl.com</span>
