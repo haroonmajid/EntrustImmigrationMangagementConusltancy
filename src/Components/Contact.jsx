@@ -213,7 +213,7 @@ const Contact = () => {
         <div style={customStyles.container}>
       {/* PhoneInput Component */}
       <PhoneInput
-        country={"us"}
+        country={"ae"}
         name="phone"
         value={formData.phone}
         required
