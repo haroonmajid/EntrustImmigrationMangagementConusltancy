@@ -6,6 +6,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import "./Contact.css"
 import ReCAPTCHA from "react-google-recaptcha";
+import "typeface-roboto";
 
 
 
@@ -48,7 +49,6 @@ const Contact = () => {
       visaType: '',
       preferredCountry: '',
     });
-    setPhone('');
   };
   const closePopup = () => {
     setIsPopupVisible(false); // Hide the popup
@@ -80,27 +80,30 @@ const Contact = () => {
   ];
 
   const [phone, setPhone] = useState('');
+  const [isFocused, setIsFocused] = useState(false);
+
   const customStyles = {
     container: {
       width: "100%",
-      // border: "2px solid #E5E7EB ",
-
-      // margin: "20px auto",
+      position: "relative",
+      fontFamily: "Roboto, sans-serif", // Required for floating label positioning
     },
     input: {
       padding: "20px 0",
-      paddingLeft:"45px",
+      paddingLeft: "45px",
       fontSize: "16px",
-      // marginLeft:"40px",
-      width:"100%",
-      borderRight:"1px solid #E5E7EB",
+      width: "100%",
+      borderRight: "1px solid #E5E7EB",
+      fontFamily: "Roboto, sans-serif", // Apply Roboto to the input
 
     },
     dropdown: {
-      border:"none",
+      // Your dropdown styles
+      fontFamily: "Roboto, sans-serif", // Apply Roboto to the dropdown
+
     },
   };
-
+  
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -165,7 +168,6 @@ const Contact = () => {
         visaType: '',
         preferredCountry: '',
       });
-      setPhone('');
     } catch (err) {
       setError(err.message || 'Failed to submit the form.');
     }
@@ -208,19 +210,42 @@ const Contact = () => {
           />
         <label className="floating-label">Name <span className='text-red-700'>*</span></label>
         </div>
-
-         <div style={customStyles.container}>
+        <div style={customStyles.container}>
+      {/* PhoneInput Component */}
       <PhoneInput
         country={"us"}
-        value={phone}
+        name="phone"
+        value={formData.phone}
         required
-        onChange={setPhone}
+        onChange={handleChange}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
         inputStyle={customStyles.input}
         buttonStyle={customStyles.dropdown}
         dropdownStyle={customStyles.dropdown}
         className="focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f]"
-        // enableSearch
       />
+
+      {/* Floating Label */}
+      <label
+        style={{
+          position: "absolute",
+          top: isFocused || phone ? "0" : "50%",
+          left: "45px", // Match the paddingLeft of the input
+          transform: isFocused || phone ? "translateY(-50%)" : "translateY(-50%)",
+          fontSize: isFocused || phone ? "14px" : "16px",
+          color: isFocused || phone ? "#01319F" : "#999",
+          transition: "all 0.2s ease",
+          pointerEvents: "none", // Ensure the label doesn't interfere with input clicks
+          backgroundColor: "#fff", // Add background to overlap the input border
+          padding: "0 4px", // Add padding to prevent overlap with the input border
+          fontFamily: "Roboto, sans-serif", // Apply Roboto to the label
+
+        }}
+      >
+        Phone
+        <span className='text-red-700'> *</span>
+      </label>
     </div>
           <div className='input-wrapper'>
           <input
@@ -229,13 +254,12 @@ const Contact = () => {
             // placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            required
             className={`floating-input w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200 ${
             formData.email ? "has-value" : ""
           }`
             }
           />
-        <label className="floating-label">Email<span className='text-red-700'> *</span></label>
+        <label className="floating-label">Email</label>
         </div>
         </div>
 

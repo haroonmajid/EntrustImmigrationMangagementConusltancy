@@ -20,7 +20,8 @@
     "react-router-dom": "^7.1.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "typeface-roboto": "^1.1.13"
   },
   "scripts": {
     "start": "react-scripts start",
