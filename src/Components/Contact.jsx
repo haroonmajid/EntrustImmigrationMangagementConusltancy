@@ -19,10 +19,13 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
     setIsPopupVisible(true);
+    
 
     formData.append("access_key", "00b0b9bb-4105-4cea-8e5c-a4ee790d5051",);
 
-    const object = Object.fromEntries(formData,phone);
+
+
+    const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
     const res = await fetch("https://api.web3forms.com/submit", {
@@ -37,6 +40,7 @@ const Contact = () => {
     if (res.success) {
       console.log("Success", res);
     }
+    setPhone('');
     setFormData({
       name: '',
       phone: '',
@@ -122,7 +126,7 @@ const Contact = () => {
     Europe: ["Work Permit", "Schengen Visa", , "Student Visa"],
     UnitedKingdom: ["Youth Mobility Visa", "India Young Professional Visa", "Global Talent Visa", "Seasonal Work Visa", "Student Visa"],
     UnitedStates: ["Student Visa(F-1)", "Visit Visa(B-2)"],
-    Australia: ["Skilled Work Regional(Subclass 491)", "Skilled Independent Visa(Subclass 189)", "SKILLED NOMINATED VISA(Subclass 190)"],
+    Australia: ["Skilled Work Regional(Subclass 491)", "Skilled Independent Visa(Subclass 189)", "Skilled Nominated Visa(Subclass 190)"],
   };
 
   const handleChange = (e) => {
@@ -168,6 +172,7 @@ const Contact = () => {
         visaType: '',
         preferredCountry: '',
       });
+      setPhone('');
     } catch (err) {
       setError(err.message || 'Failed to submit the form.');
     }
@@ -213,11 +218,10 @@ const Contact = () => {
         <div style={customStyles.container}>
       {/* PhoneInput Component */}
       <PhoneInput
-        country={"ae"}
-        name="phone"
-        value={formData.phone}
+        country={"us"}
+        value={phone}
         required
-        onChange={handleChange}
+        onChange={(value) => setPhone(value)}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         inputStyle={customStyles.input}
@@ -225,7 +229,12 @@ const Contact = () => {
         dropdownStyle={customStyles.dropdown}
         className="focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f]"
       />
-
+       <input
+              type="hidden"
+              name="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
       {/* Floating Label */}
       <label
         style={{
@@ -386,9 +395,9 @@ const Contact = () => {
             }`}
           >
             <option value=""selected disabled></option>
-            <option value="Canada">Intermediate</option>
-            <option value="Europe">Bachelor's</option>
-            <option value="UnitedKingdom">Master</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
             </select>
           <label className="floating-label">Education</label>
           </div>
