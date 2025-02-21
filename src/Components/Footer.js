@@ -1,71 +1,57 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <footer class="text-black mt-10 pt-10 border-t-2 border-neutral-200  shadow-2xl">
-            <div class="max-w-screen-xl px-5 pb-24 mx-auto flex md:items-center md:justify-between lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-                <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center">
-                    <a class="flex title-font font-medium justify-center items-center text-white mb-4 md:mb-0">
-                        <Link to='/' className="flex hover:text-[#14A660] title-font font-medium justify-center items-center text-white">
-                            <img className="w-[60%] h-[60%]" src="./entrust-logo.png" alt="" />
-                        </Link>
-                    </a>
-                    <p class="mt-2 text-[12px] text-black text-justify">Welcome To Entrust Immigration Management Consultancy. Your Trusted Partner For Global Mobility & Immigration Services.</p>
-                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 pt-10 justify-center sm:justify-start">
-                        <a href='https://www.facebook.com/profile.php?id=61572185520178' target="_blank" class="text-[#01319f]">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                            </svg>
-                        </a>
-                        <a href='https://www.instagram.com/entrustimmigration/' target="_blank" class="ml-3 text-[#01319f]">
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                            </svg>
-                        </a>
-                        <a class="ml-3 text-[#01319f]" target="_blank">
-                            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                            </svg>
-                        </a>
-                    </span>
-                       
+        <footer className="bg-gray-50 mt-10 pt-10 border-t-2 border-neutral-200">
+            <div className="max-w-screen-xl pt-10 mb-10 px-5 pb-8 mx-auto flex flex-col md:flex-row md:items-center md:justify-center gap-8">
+                {/* Logo and Description Section */}
+                <div className="w-full md:w-auto flex items-center justify-center md:justify-start space-x-4">
+                    {/* Logo */}
+                    <Link to="/" className="flex-shrink-0">
+                        <img className="w-28" src="./entrust-logo.png" alt="Entrust Immigration Logo" />
+                    </Link>
+                    {/* Text */}
+                    <p className="text-sm text-gray-600 max-w-xs">
+                        Welcome To Entrust Immigration Management Consultancy. Your Trusted Partner For Global Mobility & Immigration Services.
+                    </p>
                 </div>
-                <div class="md:flex md:items-center md:w-[75%] pr-0 -mb-10 md:mt-0 mt-10 text-center justify-evenly">
-                    <div class=" w-full py-8">
-                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
-                        <h2 class="title-font flex  justify-center font-medium  text-center text-black tracking-widest text-2xl mb-3">ABU DHABI</h2>
-                        
-                    </div>
-                    <div class="w-full py-8">
-                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
 
-                        <h2 class="title-font font-medium flex justify-center text-black tracking-widest text-2xl mb-3">DUBAI</h2>
-                        
-                    </div>
-                    <div class="w-full py-8">
-                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
-
-                        <h2 class="title-font font-medium flex justify-center text-black tracking-widest text-2xl mb-3">SHARJAH</h2>
-                 
-                    </div>
-                    
-                    <div class="w-full py-8">
-                    <i class="fa-solid fa-location-dot text-5xl text-[#01319f]"></i>
-
-                        <h2 class="title-font font-medium text-black flex md:justify-center justify-center tracking-widest text-2xl mb-3">INDIA</h2>
-                    </div>
+                {/* Locations Section */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full md:w-[75%]">
+                    {['ABU DHABI', 'DUBAI', 'SHARJAH', 'INDIA'].map((location, index) => (
+                        <div key={index} className="text-center">
+                            <FaMapMarkerAlt className="text-3xl text-[#01319f] mx-auto mb-3" />
+                            <h2 className="text-xl font-semibold text-gray-800">{location}</h2>
+                            {/* <p className="text-sm text-gray-600 mt-2">Address details for {location}</p> */}
+                        </div>
+                    ))}
                 </div>
-                
             </div>
-            <div class="bg-[#01319f] py-2">
-                <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col justify-center sm:flex-row">
-                    <p class="text-white text-[16px] text-center sm:text-left">
-                    @ Copyright Entrust Immigration Consultancy 2025. All Rights Reserved                    </p>
+
+            {/* Bottom Section (Copyright + Social Icons) */}
+            <div className="bg-[#01319f] py-4">
+                <div className="max-w-screen-xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between">
+                    {/* Copyright Text */}
+                    <p className="text-white text-sm text-center md:text-left mb-4 md:mb-0">
+                        © Copyright Entrust Immigration Consultancy 2025. All Rights Reserved
+                    </p>
+
+                    {/* Social Media Icons */}
+                    <div className="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61572185520178" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#14A660] transition-colors">
+                            <FaFacebook size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/entrustimmigration/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#14A660] transition-colors">
+                            <FaInstagram size={20} />
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#14A660] transition-colors">
+                            <FaLinkedin size={20} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
-    )
+    );
 }
