@@ -151,9 +151,9 @@ export default function Hero() {
       </div>
 
       {/* Section 3 */}
-      <div className="md:flex hidden flex-col md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
+      <div className="md:flex items-center hidden flex-col md:flex-row justify-between gap-6 max-w-screen-xl mx-auto px-4">
         <img
-          src="./tourist_visa_banner.jpg"
+          src="./tourist-visa.jpg"
           alt=""
           className="hidden md:block md:w-1/2 object-cover"
         />

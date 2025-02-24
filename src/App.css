@@ -124,7 +124,7 @@ input[type="email"]:not(:placeholder-shown) ~ .input-email{
   height: 60vh;
 }
 .usa-banner{
-  background-image: url(./Images/usa-page-image.jpg);
+  background-image: url(./Images/US-Immigration.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

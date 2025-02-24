@@ -36,7 +36,7 @@ function EuropeanVisa() {
                         </div>
                         <div class="p-4 md:w-full block md:hidden">
                             <div class="h-full border-2 md:flex border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./schengen_visa_european_countries.jpeg" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./Schengen-Visa.png" alt="blog" />
                                 <div class="p-6 md:pr-28">
                                     <h1 class="title-font text-xl font-extrabold text-gray-900 mb-3">SCHENGEN VISA</h1>
                                     <p class="leading-relaxed mb-3 text-[18px] text-justify">
@@ -70,7 +70,7 @@ function EuropeanVisa() {
                                         </Link>
                                     </div>
                                 </div>
-                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./schengen_visa_european_countries.jpeg" alt="blog" />
+                                <img class="md:h-[400px] w-full md:w-[50%] object-fill  object-center" src="./Schengen-Visa.png" alt="blog" />
 
                             </div>
                         </div>
