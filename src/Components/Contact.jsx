@@ -211,7 +211,7 @@ const Contact = () => {
         onSubmit={onSubmit}
         className="max-w-5xl form-input mx-auto mt-20 px-6 py-20 bg-white border-t-2 border-t-gray-200  shadow-2xl rounded-md"
       >
-        <div className="grid grid-cols-1 md:w-full md:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:w-full md:grid-cols-2 gap-4 mb-6">
           <div className='input-wrapper'>
             <input
               type="text"
@@ -267,22 +267,10 @@ const Contact = () => {
               <span className='text-red-700'> *</span>
             </label>
           </div>
-          <div className='input-wrapper'>
-            <input
-              type="email"
-              name="email"
-              // placeholder="Email"
-              value={formData.email}
-              onChange={handleChange}
-              className={`floating-input w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200 ${formData.email ? "has-value" : ""
-                }`
-              }
-            />
-            <label className="floating-label">Email</label>
-          </div>
+          
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4 mb-6">
           {/* <div className='input-wrapper'>
           <select
             name="migrateCountry"
@@ -301,6 +289,19 @@ const Contact = () => {
           </select>
           <label className="floating-label">Migrate Country</label>
           </div> */}
+          <div className='input-wrapper'>
+            <input
+              type="email"
+              name="email"
+              // placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className={`floating-input w-full px-4 py-0 h-11 border rounded-md outline-none focus:border-[#01319f] focus:ring-2 focus:ring-[#01319f] transition duration-200 ${formData.email ? "has-value" : ""
+                }`
+              }
+            />
+            <label className="floating-label">Email</label>
+          </div>
           <div className="input-wrapper">
             <input
               type="date"
@@ -340,7 +341,7 @@ const Contact = () => {
 
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* <div className='input-wrapper'>
           <select
             name="visaType"
@@ -371,7 +372,7 @@ const Contact = () => {
               <option value="UnitedStates">United States Of America</option>
               <option value="Australia">Australia</option>
             </select>
-            <label className="floating-label">Preferrd Country</label>
+            <label className="floating-label">Preferred Country</label>
           </div>
           <div className="input-wrapper">
             <select
@@ -390,7 +391,7 @@ const Contact = () => {
             </select>
             <label className="floating-label">Visa Type</label>
           </div>
-          <div className='input-wrapper'>
+          {/* <div className='input-wrapper'>
             <select
               name="education"
               value={formData.education}
@@ -405,7 +406,7 @@ const Contact = () => {
               <option value="Master's">Master's</option>
             </select>
             <label className="floating-label">Education</label>
-          </div>
+          </div> */}
 
 
         </div>
