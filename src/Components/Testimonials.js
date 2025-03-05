@@ -3,7 +3,7 @@ import "../App.css"
 
 export default function Testimonials() {
   return (
-    <section class="text-black h-[800px] md:h-[500px] mb-10 w-full testimonial-section body-font">
+    <section class="text-black h-[1000px] md:h-[500px] mb-10 w-full testimonial-section body-font">
       <div class="max-w-screen-xl  px-5 pt-24 pb-12 mx-auto">
         <h2 className="text-[#14A660] text-center font-bold leading-none text-[38px] md:text-[48px] mb-8">
          <span className=''>HAPPY</span>  CLIENTS
